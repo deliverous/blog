@@ -8,7 +8,7 @@ DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
 production = 'root@deliverous.com'
-dest_path = '/var/www/deliverous-blog'
+dest_path = '/var/www/blog.deliverous'
 
 # Rackspace Cloud Files configuration settings
 env.cloudfiles_username = 'my_rackspace_username'
