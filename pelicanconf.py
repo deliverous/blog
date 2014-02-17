@@ -27,21 +27,28 @@ TRANSLATION_FEED_ATOM = None
 #SOCIAL = (('Azae', 'http://azae.net'),)
 #          ('Another social link', '#'),)
 
-MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
 
 
 
 # Theme customisation
+MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
 DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+
 DISPLAY_CATEGORIES_ON_SIDEBAR = True
 DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
+
 DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
+
+DISPLAY_BREADCRUMBS = False
 
 # Extensions
 ASCIIDOC_OPTIONS = []
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
 #, 'markdown_checklist.extension'
 
-
+PLUGIN_PATH = "plugins"
+PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes"]
 
