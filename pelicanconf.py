@@ -24,7 +24,7 @@ TRANSLATION_FEED_ATOM = None
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Azae', 'http://azae.net'),)
+#SOCIAL = (('Azae', 'http://azae.net'),)
 #          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
