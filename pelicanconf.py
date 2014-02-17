@@ -34,6 +34,8 @@ MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
 # Theme customisation
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_SIDEBAR = True
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
 
 # Extensions
