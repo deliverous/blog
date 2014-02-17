@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Olivier Albiez et Thomas Clavier'
-SITENAME = u'Deliverous'
+SITENAME = u'Deliverous Blog'
 SITEURL = ''
 THEME = './themes/blueidea'
 # gum
