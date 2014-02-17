@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Olivier Albiez et Thomas Clavier'
 SITENAME = u'Deliverous Blog'
 SITEURL = ''
-THEME = './themes/blueidea'
+THEME = './themes/pelican-bootstrap3'
 # gum
 
 TIMEZONE = 'Europe/Paris'
