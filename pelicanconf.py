@@ -24,13 +24,14 @@ TRANSLATION_FEED_ATOM = None
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-#SOCIAL = (('Azae', 'http://azae.net'),)
+SOCIAL = (('Azae', 'http://azae.net'),)
 #          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
 #INDEX_SAVE_AS = 'blog.html'
-MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
+MENUITEMS = (('Tags', SITEURL + '/tags.html'),
+			('L\'équipe', 'http://deliverous.com/#equipe'),)
 #MENUITEMS = (('Tags', SITEURL + '/tags.html'),)
 
 # Uncomment following line if you want document-relative URLs when developing
