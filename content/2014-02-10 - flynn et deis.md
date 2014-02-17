@@ -22,3 +22,5 @@ Flynn est entièrement écrit en [go](http://golang.org/), basé sur docker pour
 # Deis.io
 
 J'ai essayé de mettre en oeuvre deis en utilisant leur [procédure](http://deis.io/get-deis/). Je me suis arrêté au moment ou il fallait installer un serveur chef.
+
+Pour être honête, ce projet ne me plait pas. Il y a trop d'empilement de technologie. Il faut installer ruby et python. Les container sont basé sur docker, mais pour la configuration et stockée dans un Chef Databag.
