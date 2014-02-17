@@ -69,3 +69,8 @@ a, a:hover {
     padding: 0;
     margin-left: 0;
 }
+
+body > div.container {
+  background-color: #fff;
+  opacity: 0.8;
+}
