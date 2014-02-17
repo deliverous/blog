@@ -29,26 +29,19 @@ TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = False
 
-#INDEX_SAVE_AS = 'blog.html'
 MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
-#MENUITEMS = (('Tags', SITEURL + '/tags.html'),)
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
-#PLUGIN_PATH = 'plugins'
-#PLUGINS = ['pdf',]
 
 
 # Theme customisation
-PAGES_SORT_ATTRIBUTE = 'source_path'
-DISPLAY_CATEGORIES_ON_SUBMENU = False
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_SIDEBAR = True
 
 
-
+# Extensions
 ASCIIDOC_OPTIONS = []
-
-
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
 #, 'markdown_checklist.extension'
+
+
+
