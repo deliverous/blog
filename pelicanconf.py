@@ -24,7 +24,6 @@ TRANSLATION_FEED_ATOM = None
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (,)
 #SOCIAL = (('Azae', 'http://azae.net'),)
 #          ('Another social link', '#'),)
 
