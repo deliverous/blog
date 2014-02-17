@@ -30,8 +30,7 @@ SOCIAL = (('Azae', 'http://azae.net'),)
 DEFAULT_PAGINATION = False
 
 #INDEX_SAVE_AS = 'blog.html'
-MENUITEMS = (('Tags', SITEURL + '/tags.html'),
-			('L\'équipe', 'http://deliverous.com/#equipe'),)
+MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
 #MENUITEMS = (('Tags', SITEURL + '/tags.html'),)
 
 # Uncomment following line if you want document-relative URLs when developing
