@@ -27,8 +27,6 @@ TRANSLATION_FEED_ATOM = None
 #SOCIAL = (('Azae', 'http://azae.net'),)
 #          ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = False
-
 MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
 
 
