@@ -30,6 +30,7 @@ TRANSLATION_FEED_ATOM = None
 DEFAULT_PAGINATION = False
 
 #INDEX_SAVE_AS = 'blog.html'
+MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
 #MENUITEMS = (('Tags', SITEURL + '/tags.html'),)
 
 # Uncomment following line if you want document-relative URLs when developing
