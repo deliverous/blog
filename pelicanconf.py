@@ -49,4 +49,5 @@ DISPLAY_CATEGORIES_ON_MENU = True
 ASCIIDOC_OPTIONS = []
 
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition', 'markdown_checklist.extension']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
+#, 'markdown_checklist.extension'
