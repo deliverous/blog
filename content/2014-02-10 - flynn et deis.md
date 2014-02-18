@@ -16,11 +16,15 @@ Les deux projets sont très jeunes. J'ai eu beaucoup de mal à les mettre en oeu
 
 J'ai mis en oeuvre [flynn dev](https://github.com/flynn/flynn-dev).
 
-Flynn est entièrement écrit en [go](http://golang.org/), basé sur docker pour les containers et sur [etcd](https://github.com/coreos/etcd). Le projet est plutôt cohérent dans les choix technologique et la démo marche bien. 
+Flynn est entièrement écrit en [go](http://golang.org/), basé sur docker pour les containers et sur [etcd](https://github.com/coreos/etcd). Le projet est plutôt cohérent dans les choix technologique et la démo marche bien.
 
 
 # Deis.io
 
 J'ai essayé de mettre en oeuvre deis en utilisant leur [procédure](http://deis.io/get-deis/). Je me suis arrêté au moment ou il fallait installer un serveur chef.
 
-Pour être honête, ce projet ne me plait pas. Il y a trop d'empilement de technologie. Il faut installer ruby et python. Les container sont basé sur docker, mais pour la configuration et stockée dans un Chef Databag.
+Deis est écrit en Django avec Celery, ils utilisent docker pour les container, chef pour provisionner leur conteneurs et Chef Databag comme centralisation de configuration.
+
+# Conclusion
+
+Mon choix se porterai sur Flynn. Il y a moins d'empilement de technologie.
