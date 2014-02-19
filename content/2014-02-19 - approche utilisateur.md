@@ -5,19 +5,22 @@ Tags: utilisateur
 Slug: 2014-02-19-approche-utilisateur
 Author: Thomas
 Summary: Après avoir recuilli l''avis de baucoup de personne voici comment nous imaginons l''usage de deliverous
-Status: draft
+Status: published
 
 La compilation fut longue, plusieurs mois pour interroger patiemement de très nombreuses personnes. Le résultat est là voici ce que nous imaginons, à vous de nous dire si nous vous avons correctement compris.
 
-## Rapide et simple
+
+# Rapide et simple
 
 après avoir créer un compte sur la plateforme deliverous.com, l''utilisateur va pouvoir ajouter un nouveau remote dans sa copie locale de travail. Un simple git push vers ce nouveau dépot de code déclanchera la chaine de déploiement continu.
 
 Par exemple : 
- git remote add deliverous git@git.deliverous.com:monprojet.git
- git push deliverous
 
-## Un "Pipeline"
+    git remote add deliverous git@git.deliverous.com:monprojet.git
+    git push deliverous
+
+
+# Un "Pipeline"
 
 Pour configurer les différentes étapes du déploiement il sera possible de décrire le "pipeline" par exemple : 
 - construire l''application
