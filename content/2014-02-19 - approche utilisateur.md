@@ -4,10 +4,10 @@ Category: Articles
 Tags: utilisateur
 Slug: 2014-02-19-approche-utilisateur
 Author: Thomas
-Summary: Après avoir recuilli l''avis de baucoup de personne voici comment nous imaginons l''usage de deliverous
+Summary: Après avoir recueilli l''avis de beaucoup de personne voici comment nous imaginons l''usage de deliverous
 Status: draft
 
-La compilation fut longue, plusieurs mois pour interroger patiemement de très nombreuses personnes. Le résultat est là voici ce que nous imaginons, à vous de nous dire si nous vous avons correctement compris.
+La compilation fut longue, plusieurs mois pour interroger patiemment de très nombreuses personnes. Le résultat est là voici ce que nous imaginons, à vous de nous dire si nous vous avons correctement compris.
 
 
 # Rapide et simple
