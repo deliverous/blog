@@ -5,14 +5,14 @@ Tags: utilisateur
 Slug: 2014-02-19-approche-utilisateur
 Author: Thomas
 Summary: Après avoir recuilli l''avis de baucoup de personne voici comment nous imaginons l''usage de deliverous
-Status: published
+Status: draft
 
 La compilation fut longue, plusieurs mois pour interroger patiemement de très nombreuses personnes. Le résultat est là voici ce que nous imaginons, à vous de nous dire si nous vous avons correctement compris.
 
 
 # Rapide et simple
 
-après avoir créer un compte sur la plateforme deliverous.com, l''utilisateur va pouvoir ajouter un nouveau remote dans sa copie locale de travail. Un simple git push vers ce nouveau dépot de code déclanchera la chaine de déploiement continu.
+Après avoir créé un compte sur la plateforme deliverous.com, l''utilisateur va pouvoir ajouter un nouveau remote dans sa copie locale de travail. Un simple git push vers ce nouveau dépôt de code déclenchera la chaîne de déploiement continu.
 
 Par exemple : 
 
@@ -23,11 +23,12 @@ Par exemple :
 # Un "Pipeline"
 
 Pour configurer les différentes étapes du déploiement il sera possible de décrire le "pipeline" par exemple : 
+
 - construire l''application
-- construire un environement de test unitaire composé d''un container avec toutes mes briques applicatives
+- construire un environnement de test unitaire composé d''un container avec toutes mes briques applicatives
 - jouer dans ce container la commande "toto test:unit" qui lance l''ensemble des tests unitaires
-- construire un environement de test d''intégration composé de 6 containers à l''image de la production
-- jouer dans le container A de cet environement jouer la commande "toto test:integration"
-- construire un environement contenant une copie des données de ma production et y déployer mon application
+- construire un environnement de test d''intégration composé de 6 containers à l''image de la production
+- jouer dans le container A de cet environnement jouer la commande "toto test:integration"
+- construire un environnement contenant une copie des données de ma production et y déployer mon application
 
 arrivé à cette étape 
