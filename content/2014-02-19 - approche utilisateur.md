@@ -16,19 +16,39 @@ Après avoir créé un compte sur la plateforme deliverous.com, l'utilisateur va
 
 Par exemple : 
 
-    git remote add deliverous git@git.deliverous.com:monprojet.git
-    git push deliverous
+`
+git remote add deliverous git@git.deliverous.com:monprojet.git
+git push deliverous
+`
 
 
-# Un "Pipeline"
+# Des "pipeline"
 
-Pour configurer les différentes étapes du déploiement il sera possible de décrire le "pipeline" par exemple : 
+Déployer un logiciel c'est dérouler automatiquement un ensemble d'étapes. Celà
+permet par exemple de passer du dépot de code au logiciel déployé et
+utilisable. Ces étapes seront décrites dans un "pipeline". Chaque utilisateur
+est libre de décrire autant de pipeline que souhaité. Le pipeline par défaut
+permet de déployer en production. 
+
+Voici par exemple un pipeline préproduction :
 
 - construire l’application
 - construire un environnement de test unitaire composé d’un container avec toutes mes briques applicatives
-- jouer dans ce container la commande "toto test:unit" qui lance l’ensemble des tests unitaires
+- jouer dans ce container la commande `toto test:unit` qui lance l’ensemble des tests unitaires
 - construire un environnement de test d’intégration composé de 6 containers à l’image de la production
-- jouer dans le container A de cet environnement jouer la commande "toto test:integration"
+- jouer dans le container A de cet environnement jouer la commande `toto test:integration`
 - construire un environnement contenant une copie des données de ma production et y déployer mon application
 
-arrivé à cette étape 
+arrivé à cette étape votre application est disponible et utilisable dans un environement de préproduction.
+
+Pour passer de la préproduction à la production il faudra déclencher le pipeline prodcution. 
+
+# Déclancheurs
+
+Il sera possible de déclancher des pipelines de deux façons différentes : 
+
+- un hook sur le dépot de code
+- une action manuelle
+
+de cette façon nous pensons pouvoir couvrir tous les cas d'usages.
+
