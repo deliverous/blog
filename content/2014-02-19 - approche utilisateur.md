@@ -16,11 +16,10 @@ Après avoir créé un compte sur la plateforme deliverous.com, l'utilisateur va
 
 Par exemple : 
 
-`
-git remote add deliverous git@git.deliverous.com:monprojet.git
-git push deliverous
-`
+    git remote add deliverous git@git.deliverous.com:monprojet.git
+    git push deliverous
 
+Toute la configuration se fait à travers des fichiers textes commités dans le dépot.
 
 # Des "pipeline"
 
@@ -51,4 +50,8 @@ Il sera possible de déclancher des pipelines de deux façons différentes :
 - une action manuelle
 
 de cette façon nous pensons pouvoir couvrir tous les cas d'usages.
+
+# Pour continuer
+
+Le sujet vous intéresse, abonnez vous à la [mailing liste](ml.deliverous.com/mailman/listinfo/deliverous)
 
