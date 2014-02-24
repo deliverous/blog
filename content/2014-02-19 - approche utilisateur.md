@@ -53,5 +53,5 @@ de cette façon nous pensons pouvoir couvrir tous les cas d'usages.
 
 # Pour continuer
 
-Le sujet vous intéresse, abonnez vous à la [mailing liste](ml.deliverous.com/mailman/listinfo/deliverous)
+Le sujet vous intéresse, abonnez vous à la [mailing liste](http://ml.deliverous.com/mailman/listinfo/deliverous)
 
