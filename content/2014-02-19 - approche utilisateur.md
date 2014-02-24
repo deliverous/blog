@@ -4,7 +4,7 @@ Category: Articles
 Tags: utilisateur
 Slug: 2014-02-19-approche-utilisateur
 Author: Thomas
-Summary: Après avoir recueilli l'avis de beaucoup de personne voici comment nous imaginons l'usage de deliverous
+Summary: Après avoir recueilli l'avis de beaucoup de personnes voici comment nous imaginons l'usage de deliverous
 Status: published
 
 La compilation fut longue, plusieurs mois pour interroger patiemment de très nombreuses personnes. Le résultat est là voici ce que nous imaginons, à vous de nous dire si nous vous avons correctement compris.
@@ -19,14 +19,14 @@ Par exemple :
     git remote add deliverous git@git.deliverous.com:monprojet.git
     git push deliverous
 
-Toute la configuration se fait à travers des fichiers textes commités dans le dépot.
+Toute la configuration se fait à travers des fichiers textes commités dans le dépôt.
 
-# Des "pipeline"
+# Des "pipelines"
 
-Déployer un logiciel c'est dérouler automatiquement un ensemble d'étapes. Celà
-permet par exemple de passer du dépot de code au logiciel déployé et
+Déployer un logiciel c'est dérouler automatiquement un ensemble d'étapes. Cela
+permet par exemple de passer du dépôt de code au logiciel déployé et
 utilisable. Ces étapes seront décrites dans un "pipeline". Chaque utilisateur
-est libre de décrire autant de pipeline que souhaité. Le pipeline par défaut
+est libre de décrire autant de pipelines que souhaité. Le pipeline par défaut
 permet de déployer en production. 
 
 Voici par exemple un pipeline préproduction :
@@ -38,20 +38,20 @@ Voici par exemple un pipeline préproduction :
 - jouer dans le container A de cet environnement jouer la commande `toto test:integration`
 - construire un environnement contenant une copie des données de ma production et y déployer mon application
 
-arrivé à cette étape votre application est disponible et utilisable dans un environement de préproduction.
+Quand vous arrivez à cette étape, votre application est disponible et utilisable dans un environnement de préproduction.
 
-Pour passer de la préproduction à la production il faudra déclencher le pipeline prodcution. 
+Pour passer de la préproduction à la production il faudra déclencher le pipeline production. 
 
-# Déclancheurs
+# Déclencheurs
 
-Il sera possible de déclancher des pipelines de deux façons différentes : 
+Il sera possible de déclencher des pipelines de deux façons différentes : 
 
-- un hook sur le dépot de code
+- un hook sur le dépôt de code
 - une action manuelle
 
-de cette façon nous pensons pouvoir couvrir tous les cas d'usages.
+de cette façon nous couvrons tous les cas d'usages.
 
 # Pour continuer
 
-Le sujet vous intéresse, abonnez vous à la [mailing liste](http://ml.deliverous.com/mailman/listinfo/deliverous)
+Le sujet vous intéresse, abonnez-vous à la [mailing liste](http://ml.deliverous.com/mailman/listinfo/deliverous)
 
