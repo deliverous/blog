@@ -7,4 +7,18 @@ Author: Thomas, Olivier
 Summary: Première plongé dans le code de fynn.io pour bien comprendre son fonctionnement. De retour de cette expérience très enrichissante.
 Status: draft
 
+# Configuration distribué
+etcd : sauvegarde clé-valeur 
+discoverd : maintenir un registre à jour de l'ensemble des services, et pousser l'information en temps réel vers les clients.
 
+# lancer les container docker 
+flynn-host
+
+# controller
+flynn controller
+
+# un serveur de fichiers http
+shelf
+
+# routeur http
+Un grand nombre des services sont exposés en http, faire de l'équilibrage de charge est indispensable. HAproxy c'est bien mais il faut relancer un nouveau process 
