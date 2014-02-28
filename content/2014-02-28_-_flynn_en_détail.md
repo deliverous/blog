@@ -21,4 +21,4 @@ flynn controller
 shelf
 
 # routeur http
-Un grand nombre des services sont exposés en http, faire de l'équilibrage de charge est indispensable. HAproxy c'est bien mais il faut relancer un nouveau process 
+Un grand nombre des services sont exposés en http, faire de l'équilibrage de charge est indispensable. HAproxy c'est bien mais il faut relancer un nouveau process à chaque changement de configuration. Pour compenser ce problème, flynn.io est en train d'écrire un nouveau service "strowger" qui se chargera justement de faire ce routage et de prendre en compte dynamiquement depuis discoverd toutes les évolutions de configuration.
