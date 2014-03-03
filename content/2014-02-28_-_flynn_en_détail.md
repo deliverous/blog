@@ -8,8 +8,26 @@ Summary: Première plongé dans le code de fynn.io pour bien comprendre son fonc
 Status: draft
 
 # Configuration distribué
-etcd : sauvegarde clé-valeur 
-discoverd : maintenir un registre à jour de l'ensemble des services, et pousser l'information en temps réel vers les clients.
+
+
+## [etcd](https://coreos.com/using-coreos/etcd/)
+
+etcd est un conteneur distribué de clé/valeur. Il permet aussi de faire de l'éléction de leader. C'est le composant de coreos pour la configuration des container.
+
+Question: 
+D'un côté, ils conseillent une prendre une cluster etcd <= 9 noeuds. De l'autre côté ils disent qu'il faut un etcd client par machine physique. Quel est le déploiement ?
+
+
+## [discoverd](https://github.com/flynn/discoverd)
+
+discoverd est un système de découverte de service. Il permet de pousser en temps réel les changement dans les services vers les clients.
+
+- enregistrer un service
+- trouver un service
+- notification quand un service change
+- identifier le leader d'un service
+
+
 
 # lancer les container docker 
 flynn-host
