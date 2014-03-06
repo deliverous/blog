@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Olivier Albiez et Thomas Clavier'
 SITENAME = u'Deliverous Blog'
-SITEURL = ''
+SITEURL = 'http://blog.deliverous.com'
 THEME = './theme'
 # gum
 
@@ -13,7 +13,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'fr'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+#FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
