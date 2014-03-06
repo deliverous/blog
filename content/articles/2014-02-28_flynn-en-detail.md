@@ -9,7 +9,7 @@ Status: draft
 
 # Une histoire de container
 
-Rêvons un peu, imaginons un système capable d'héberger des applications scalables à volonté. Chaque application est isolée dans un container et pour faire face à la charge, il suffit d'en multiplier le nombre. Pour le projet Flynn, on lance les containers dans la grille et cette grille est capable d'utiliser au mieux le matériel tout en garantissant la bonne marche des containers.
+Rêvons un peu, imaginons un système capable d'héberger des applications scalables à volonté. Chaque application est isolée dans un container et pour faire face à la charge, il suffit d'en multiplier le nombre. Pour le projet *Flynn.io*, on lance les containers dans la grille et cette grille est capable d'utiliser au mieux le matériel tout en garantissant la bonne marche des containers.
 
 Dans ce cadre, il est important de séparer la configuration (l'adresse de mon service de persistance par exemple), l'application (le code compilé et toutes ses dépendances) et les données. 
 
@@ -58,7 +58,7 @@ Vue de l'extérieur de la grille, les différentes tâches dévolues au contrôl
 - lancer de nouveaux containers
 - surveiller que les containers sont encore en vie et le cas échéant les relancer
 
-C'est théoriquement l'unique point d'entrer de la grille c'est le composant flynn-controller qui s'en charge. Dans la pratique nous verrons plus tard que ce n'est pas le cas.
+C'est théoriquement l'unique point d'entrer de la grille c'est le composant *flynn-controller* qui s'en charge. Dans la pratique nous verrons plus tard que ce n'est pas le cas.
 
 Lancer un container va prendre du temps, pour gérer la reprise sur erreur et les pics d'activité le projet *Flynn.io* a choisi d'implémenter 3 files d'attentes : 
 
@@ -76,28 +76,28 @@ Au-dessus de la grille nous trouvons les briques capables de router les services
 
 Un grand nombre des services sont exposés en http, faire de l'équilibrage de charge est indispensable, surtout si pour faire face à la charge on augmente le nombre d'instances du service. HAproxy est une solution presque parfaite elle est robuste et performante, mais il faut relancer un nouveau processus à chaque changement de configuration. 
 
-Pour compenser ce problème, *Flynn.io* est en train d'écrire un nouveau service "strowger" qui se chargera justement de faire ce routage et de prendre encompte dynamiquement depuis discoverd toutes les évolutions de configuration.
+Pour compenser ce problème, *Flynn.io* est en train d'écrire un nouveau service "strowger" qui se chargera justement de faire ce routage et de prendre encompte dynamiquement depuis *discoverd* toutes les évolutions de configuration.
 
 
 ## Construire
 
 Construire une application c'est dans la majorité des cas rapatrier les dépendances et compiler le code source. Pour Heroku c'est dérouler le Buildpack. 
 
-Pour que la démonstration soit parlante, *Flynn.io* a réalisé une première implémentation de flynn-builder capable de construire les applications en suivant un Buildpack.
+Pour que la démonstration soit parlante, *Flynn.io* a réalisé une première implémentation de *flynn-builder* capable de construire les applications en suivant un Buildpack.
 
 
 ## un serveur de fichiers http
 
 Une fois les containers construits et prêts à être lancer il est nécessaire d'avoir un référentiel d'images. Le projet a fait le choix d'un référentiel accessible en REST : "shelf" au départ un simple dépôt de fichier et plus tard probablement un proxy vers swift, S3 ou hubic.
 
-À la fin de la construction, flynn-builder se charge aussi de sauvegarder l'image du container dans shelf
+À la fin de la construction, *flynn-builder* se charge aussi de sauvegarder l'image du container dans shelf
 
 
 ## Exécuter
 
-Toujours dans une optique de démonstration nous trouvons le processus flynn-runner capable de lire une image de container dans shelf, de la lancer avant d'enregistrer le service correspondant dans discoverd. 
+Toujours dans une optique de démonstration nous trouvons le processus *flynn-runner* capable de lire une image de container dans shelf, de la lancer avant d'enregistrer le service correspondant dans *discoverd*. 
 
-Malheureusement ce processus lance les containers en se connectant directement sur discoverd et flynn-host... Probablement l'effet démo.
+Malheureusement ce processus lance les containers en se connectant directement sur *discoverd* et *flynn-host*... Probablement l'effet démo.
 
 
 # Un système construit avec lui-même 
