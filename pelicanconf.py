@@ -19,13 +19,16 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
 
 # Blogroll
+LINKS =  (('Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),)
+
+
 #LINKS =  (('Pelican', 'http://getpelican.com/'),
 #          ('Python.org', 'http://python.org/'),
 #          ('Jinja2', 'http://jinja.pocoo.org/'),
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-#SOCIAL = (('Azae', 'http://azae.net'),)
+#SOCIAL = (('Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),)
 #          ('Another social link', '#'),)
 
 
