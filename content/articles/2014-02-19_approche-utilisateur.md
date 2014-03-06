@@ -1,5 +1,4 @@
 Title: Approche utilisateur
-Category: Articles
 Tags: utilisateur
 Author: Thomas
 Summary: Après avoir recueilli l'avis de beaucoup de personnes voici comment nous imaginons l'usage de deliverous

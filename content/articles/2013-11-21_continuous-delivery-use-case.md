@@ -1,5 +1,4 @@
 Title: A Continuous Delivery Implementation
-Category: Articles
 Tags: tools
 Author: Thomas Clavier
 Summary: A Continuous Delivery Implementation

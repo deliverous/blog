@@ -1,5 +1,4 @@
 Title: Survol de flynn.io et de deis.io
-Category: Articles
 Tags: tools, flynn, deis
 Author: Olivier
 Summary: Rapide comparaison de flynn.io et de deis.io
