@@ -48,7 +48,3 @@ Il sera possible de déclencher des pipelines de deux façons différentes :
 
 de cette façon nous couvrons tous les cas d'usages.
 
-# Pour continuer
-
-Le sujet vous intéresse, abonnez-vous à la [mailing liste](http://ml.deliverous.com/mailman/listinfo/deliverous)
-
