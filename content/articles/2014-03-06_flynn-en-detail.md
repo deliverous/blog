@@ -103,5 +103,9 @@ Malheureusement ce processus lance les containers en se connectant directement s
 
 Il existe quelques briques qui ne sont pas automatiquement lancées et distribuées dans le système, le cluster *etcd* en fait partie. La liste des nœuds du cluster *etcd* est connue et partagée par tous. 
 
+# Pour continuer
+
+Le sujet vous intéresse, abonnez-vous à la [mailing liste](http://ml.deliverous.com/mailman/listinfo/deliverous)
+
 ---
 Photo par [StartTheDay](http://www.flickr.com/photos/37355847@N02/3657619003)
