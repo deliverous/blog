@@ -1,8 +1,6 @@
 Title: Approche utilisateur
-Date: 2014-02-19 18:00
 Category: Articles
 Tags: utilisateur
-Slug: 2014-02-19-approche-utilisateur
 Author: Thomas
 Summary: Après avoir recueilli l'avis de beaucoup de personnes voici comment nous imaginons l'usage de deliverous
 Status: published

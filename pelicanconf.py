@@ -12,6 +12,8 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'fr'
 
+FILENAME_METADATA = '(?P<slug>(?P<date>\d{4}-\d{2}-\d{2})_.*)'
+
 # Feed generation is usually not desired when developing
 #FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

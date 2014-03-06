@@ -1,8 +1,6 @@
 Title: Hackathon initial
-Date: 2014-02-09 16:00
 Category: News
 Tags: tools
-Slug: 2014-02-09-hackathon
 Author: Olivier
 Summary: Ce que l'on a appris dans notre hackathon de deux jours.
 Status: draft

@@ -1,8 +1,6 @@
 Title: Survol de flynn.io et de deis.io
-Date: 2014-02-10 16:00
 Category: Articles
 Tags: tools, flynn, deis
-Slug: 2014-02-10-flynn-and-deis
 Author: Olivier
 Summary: Rapide comparaison de flynn.io et de deis.io
 Status: published

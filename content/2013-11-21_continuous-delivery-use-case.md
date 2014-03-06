@@ -1,8 +1,6 @@
 Title: A Continuous Delivery Implementation
-Date: 2013-11-21 13:00
 Category: Articles
 Tags: tools
-Slug: continuous-delivery-implementation
 Author: Thomas Clavier
 Summary: A Continuous Delivery Implementation
 Status: draft
