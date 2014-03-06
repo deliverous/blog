@@ -17,8 +17,8 @@ retrouve avec un système modulaire et extensible composé de briques simples.
 
 Rêvons un peu, imaginons un système capable d'héberger des applications
 scalables à volonté. Chaque application est isolée dans un container et pour
-faire face à la charge il suffit d'en multiplier le nombre. Pour le projet
-Flynn on lance les containers dans la grille et cette grille est capable
+faire face à la charge, il suffit d'en multiplier le nombre. Pour le projet
+Flynn, on lance les containers dans la grille et cette grille est capable
 d'utiliser au mieux le matériel tout en garantissant la bonne marche des
 containers.
 
