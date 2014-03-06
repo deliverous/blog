@@ -19,7 +19,8 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
 
 # Blogroll
-LINKS =  (('Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),)
+LINKS =  (('<span class="fa-envelope"> Mailing list Deliverous</span>', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),
+          ('<span class="fa-rss"> RSS</span>', 'http://blog.deliverous.com/feeds/all.atom.xml'),)
 
 
 #LINKS =  (('Pelican', 'http://getpelican.com/'),
