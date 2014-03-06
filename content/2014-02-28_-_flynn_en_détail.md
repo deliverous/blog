@@ -7,11 +7,10 @@ Author: Thomas, Olivier
 Summary: Première plongé dans le code de fynn.io pour bien comprendre son fonctionnement. De retour de cette expérience très enrichissante.
 Status: draft
 
-Flynn.io se présente comme un ensemble de briques Légo du PaaS. Basé sur le
-travail de 
+Flynn.io se présente comme le Légo du PaaS. Basé sur le travail de 
 [Russell Ackoff](http://knowledge.wharton.upenn.edu/article/idealized-design-how-bell-labs-imagined-and-created-the-telephone-system-of-the-future/)
 les briques sont toutes indépendantes et communiquent entre elles. On se
-retrouve avec un système modulaire et extensible composé de briques simple.
+retrouve avec un système modulaire et extensible composé de briques simples.
 
 # Une histoire de container
 
@@ -55,7 +54,7 @@ temps réel les changement dans les services vers les clients.
 - notification quand un service change
 - identifier le leader d'un service
 
-## lancer les container docker 
+## Lancer les container docker 
 
 La grille est composé de machines physiques. Chaque machine héberge un docker
 mais il faut aussi un agent capable de lancer localement de nouveau containers
@@ -66,17 +65,33 @@ dans un container et communique avec le démon docker via l'api.
 
 => Question API REST HTTP ou socket unix monté dans le container ?
 
-## controlleur
+## Controlleur
 
-Les 3 sceduleurs et une remonté d'information pour le client
-flynn controller
+Vue de l'extérieur de la grille les différentes tâches dévolue au contrôleur
+sont les suivantes :
+
+- lancer de nouveaux containers
+- surveiller que les containers sont encore en vie et le cas échéant les relancer
+
+C'est théoriquement l'unique point d'entrer de la grille c'est le composant
+flynn-controller qui s'en charge. Dans la pratique nous verrons plus tard que
+ce n'est pas le cas.
+
+Lancer un container va prendre du temps, pour gérer la reprise sur erreur et
+les pics d'activité le projet flynn.io a choisis d'implémenter 3 files
+d'attentes : 
+
+- Les services : pour lancer des processus très long comme apache ou nginx
+- Les éphémères : pour lancer des traitements court comme un traitement "batch"
+ou une session shell interactive.
+- Les constructeurs : pour lancer les constructions d'application.
 
 # Au niveau supérieur
 
 Au dessus de la grille nous trouvons les briques capable de router les
 services, de construire des applications et de les lancer.
 
-## routeur http
+## Routeur http
 Un grand nombre des services sont exposés en http, faire de l'équilibrage de
 charge est indispensable, surtout si pour faire face à la charge on augmente le
 nombre d'instances du service. HAproxy est une solution presque parfaite elle est
@@ -86,14 +101,32 @@ Pour compenser ce problème, flynn.io est en train d'écrire un nouveau service
 "strowger" qui se chargera justement de faire ce routage et de prendre en
 compte dynamiquement depuis discoverd toutes les évolutions de configuration.
 
-## builder
-construire les containers et les enregistrer dans shelf
+## Construire
+Construire une application c'est dans la majorité des cas rapatrier les
+dépendances et compiler le code source. Pour Heroku c'est dérouler le
+Buildpack. 
+Pour que la démonstration soit parlante, flynn.io a réalisé une première
+implémentation de flynn-builder capable de construire les application en
+suivant un Buildpack.
 
 ## un serveur de fichiers http
-shelf
+Une fois les containers construit et près a être lancer il est nécéssaire
+d'avoir un référentiel d'images. 
+Le projet a fait le choix d'un référentiel accessible en REST : "shelf" au
+départ un simple dépot de fichier et plus tard probablement un proxy vers
+swift, S3 ou hubic.
 
-## Runner
-lire un container depuis shelf puis lancer ce container et l'enregistrer sur discoverd
+À la fin de la construction, flynn-builder se charge aussi de sauvegarder
+l'image du container dans shelf
+
+## Exécuter
+
+Toujours dans une optique de démonstration nous trouvons le processus
+flynn-runner capable de lire une image de container dans shelf, de la lancer
+avant d'enregistrer le service correspondant dans discoverd. 
+
+Malheureusement ce processus lance les container en se connectant directement
+sur discoverd et flynn-host ... Probablement l'effet démo.
 
 # Un système construit avec lui même 
 
