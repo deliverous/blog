@@ -141,7 +141,7 @@ sur discoverd et flynn-host... Probablement l'effet démo.
 
 # Un système construit avec lui-même 
 
-Il existe quelques briques qui ne sont pas automatiquement lancé et distribué dans le
+Il existe quelques briques qui ne sont pas automatiquement lancées et distribuées dans le
 système, le cluster etcd en fait partie. La liste des nœuds du cluster etcd est
 connue et partagée par tous. 
 
