@@ -18,13 +18,13 @@ retrouve avec un système modulaire et extensible composé de briques simple.
 Rêvons un peu, imaginons un système capable d'héberger des applications
 scalable à volonté. Chaque application est isolé dans un container et pour
 faire face à la charge il suffit d'en multiplier le nombre. Pour le projet
-Flynn on lance les containers dans la grille et cette grillle est capable
+Flynn on lance les containers dans la grille et cette grille est capable
 d'utiliser au mieux le matériel tout en garantissant la bonne marche des
 containers.
 
-Dans ce cadre, il est important de séparer la configuration (l'addresse de mon
+Dans ce cadre, il est important de séparer la configuration (l'adresse de mon
 service de persistance par exemple), l'application (le code compilé et toutes
-ses dépendaces) et les données. 
+ses dépendances) et les données. 
 
 Pour lancer un container, il suffit alors de fusionner l'application et sa
 configuration et de demander au système une place dans la grille.
@@ -38,13 +38,17 @@ brique dédié et distribué sur l'ensemble de la grille.
 
 ### [etcd](https://coreos.com/using-coreos/etcd/)
 
-etcd est un conteneur distribué de clé/valeur. Il permet aussi de faire de
-l'éléction de leader. C'est le composant de coreos pour gérer la configuration
+etcd est un conteneur distribué de clé/valeur. Une sorte de Redis simplifié et
+très robuste garantissant la cohérence des données enregistrés. 
+Il permet aussi de faire de l'élection de leader et de la gestion de verrou
+distribué. 
+C'est le composant de [coreos](https://coreos.com/) pour gérer la configuration
 des container.
 
 ### [discoverd](https://github.com/flynn/discoverd)
 
-discoverd est un système de découverte de service. Il permet de pousser en temps réel les changement dans les services vers les clients.
+discoverd est un système de découverte de service. Il permet de pousser en
+temps réel les changement dans les services vers les clients.
 
 - enregistrer un service
 - trouver un service
@@ -55,7 +59,7 @@ discoverd est un système de découverte de service. Il permet de pousser en tem
 
 La grille est composé de machines physiques. Chaque machine héberge un docker
 mais il faut aussi un agent capable de lancer localement de nouveau containers
-et de remmonter un certains nombre de métriques pour aider le controlleur a
+et de remonter un certains nombre de métriques pour aider le contrôleur a
 prendre ses décisions.
 Cet agent c'est [flynn-host](https://github.com/flynn/flynn-host), il est lancé
 dans un container et communique avec le démon docker via l'api.
@@ -64,7 +68,7 @@ dans un container et communique avec le démon docker via l'api.
 
 ## controlleur
 
-Les 3 sceduleurs et une remonté d'info pour le client
+Les 3 sceduleurs et une remonté d'information pour le client
 flynn controller
 
 # Au niveau supérieur
@@ -75,8 +79,9 @@ services, de construire des applications et de les lancer.
 ## routeur http
 Un grand nombre des services sont exposés en http, faire de l'équilibrage de
 charge est indispensable, surtout si pour faire face à la charge on augmente le
-nombre d'instances du service. HAproxy est très bien mais il faut relancer un
-nouveau process à chaque changement de configuration. 
+nombre d'instances du service. HAproxy est une solution presque parfaite elle est
+robuste et performante, mais il faut relancer un nouveau processus à chaque
+changement de configuration. 
 Pour compenser ce problème, flynn.io est en train d'écrire un nouveau service
 "strowger" qui se chargera justement de faire ce routage et de prendre en
 compte dynamiquement depuis discoverd toutes les évolutions de configuration.
@@ -93,6 +98,6 @@ lire un container depuis shelf puis lancer ce container et l'enregistrer sur dis
 # Un système construit avec lui même 
 
 Il existe quelques briques qui ne sont pas automatiquement lancé et distribué dans le
-système, le cluster etcd en fait parti. La liste des noeuds du cluster etcd est
+système, le cluster etcd en fait parti. La liste des nœuds du cluster etcd est
 connue et partagé par tous. 
 
