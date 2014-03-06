@@ -52,3 +52,5 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
 PLUGIN_PATH = "plugins"
 PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes"]
 
+# static content
+STATIC_PATHS = ['images']

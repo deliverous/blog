@@ -2,7 +2,7 @@ Title: Flynn.io en détail
 Date: 2014-02-28 23:00
 Category: Articles
 Tags: flynn, tools
-Slug: 2014-02-28-flynn-en-detail
+Slug: flynn-en-detail
 Author: Thomas, Olivier
 Summary: Première plongé dans le code de fynn.io pour bien comprendre son fonctionnement. De retour de cette expérience très enrichissante.
 Status: draft
@@ -28,6 +28,8 @@ ses dépendances) et les données.
 Pour lancer un container, il suffit alors de fusionner l'application et sa
 configuration et de demander au système une place dans la grille.
 
+![Architechture Flynn]({filename}/images/flynn-arch.png)
+ 
 # Les briques de base de la grille
 
 ## Configuration distribué
