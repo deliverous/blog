@@ -6,7 +6,7 @@ AUTHOR = u'Olivier Albiez et Thomas Clavier'
 SITENAME = u'Deliverous Blog'
 SITEURL = 'http://blog.deliverous.com'
 THEME = './theme'
-# gum
+
 
 TIMEZONE = 'Europe/Paris'
 
@@ -15,12 +15,8 @@ DEFAULT_LANG = u'fr'
 FILENAME_METADATA = '(?P<slug>(?P<date>\d{4}-\d{2}-\d{2})_.*)'
 USE_FOLDER_AS_CATEGORY = True
 DELETE_OUTPUT_DIRECTORY = True
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
-
-# Feed generation is usually not desired when developing
-#FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 #LINKS =  (('Pelican', 'http://getpelican.com/'),
