@@ -1,7 +1,7 @@
-Title: Flynn.io en détail
+Title: <em>Flynn.io</em> en détail
 Tags: flynn, tools
 Author: Thomas, Olivier
-Summary: Première plongé dans le code de fynn.io pour bien comprendre son fonctionnement. Retour de cette expérience très enrichissante.
+Summary: Première plongé dans le code de *Fynn.io* pour bien comprendre son fonctionnement. Retour de cette expérience très enrichissante.
 Status: published
 
 
