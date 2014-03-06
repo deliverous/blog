@@ -25,16 +25,16 @@ Pour lancer un container, il suffit alors de fusionner l'application et sa confi
 La configuration de chaque application doit donc être enregistrée dans une brique dédiée et distribuée sur l'ensemble de la grille.
 
 
-### [etcd](https://coreos.com/using-coreos/etcd/)
+### [*etcd*](https://coreos.com/using-coreos/etcd/)
 
-etcd est un conteneur distribué de clé/valeur. Une sorte de Redis simplifié et très robuste garantissant la cohérence des données enregistrées. Il permet aussi de faire de l'élection de leader et de la gestion de verrou distribué. 
+*etcd* est un conteneur distribué de clé/valeur. Une sorte de Redis simplifié et très robuste garantissant la cohérence des données enregistrées. Il permet aussi de faire de l'élection de leader et de la gestion de verrou distribué. 
 
 C'est le composant de [coreos](https://coreos.com/) pour gérer la configuration des containers.
 
 
-### [discoverd](https://github.com/flynn/discoverd)
+### [*discoverd*](https://github.com/flynn/discoverd)
 
-discoverd est un système de découverte de service. Il permet de pousser en temps réel les changements dans les services vers les clients.
+*discoverd* est un système de découverte de service. Il permet de pousser en temps réel les changements dans les services vers les clients.
 
 - enregistrer un service
 - trouver un service
@@ -102,4 +102,4 @@ Malheureusement ce processus lance les containers en se connectant directement s
 
 # Un système construit avec lui-même 
 
-Il existe quelques briques qui ne sont pas automatiquement lancées et distribuées dans le système, le cluster etcd en fait partie. La liste des nœuds du cluster etcd est connue et partagée par tous. 
+Il existe quelques briques qui ne sont pas automatiquement lancées et distribuées dans le système, le cluster *etcd* en fait partie. La liste des nœuds du cluster *etcd* est connue et partagée par tous. 
