@@ -14,6 +14,8 @@ DEFAULT_LANG = u'fr'
 
 FILENAME_METADATA = '(?P<slug>(?P<date>\d{4}-\d{2}-\d{2})_.*)'
 USE_FOLDER_AS_CATEGORY = True
+DELETE_OUTPUT_DIRECTORY = True
+
 
 # Feed generation is usually not desired when developing
 #FEED_ALL_ATOM = None
