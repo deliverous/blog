@@ -12,6 +12,7 @@ Flynn.io se présente comme le Légo du PaaS. Basé sur le travail de
 les briques sont toutes indépendantes et communiquent entre elles. On se
 retrouve avec un système modulaire et extensible composé de briques simples.
 
+
 # Une histoire de container
 
 Rêvons un peu, imaginons un système capable d'héberger des applications
@@ -32,10 +33,12 @@ configuration et de demander au système une place dans la grille.
  
 # Les briques de base de la grille
 
+
 ## Configuration distribué
 
 La configuration de chaque application doit donc être enregistré dans une
 brique dédié et distribué sur l'ensemble de la grille.
+
 
 ### [etcd](https://coreos.com/using-coreos/etcd/)
 
@@ -46,6 +49,7 @@ distribué.
 C'est le composant de [coreos](https://coreos.com/) pour gérer la configuration
 des container.
 
+
 ### [discoverd](https://github.com/flynn/discoverd)
 
 discoverd est un système de découverte de service. Il permet de pousser en
@@ -55,6 +59,7 @@ temps réel les changement dans les services vers les clients.
 - trouver un service
 - notification quand un service change
 - identifier le leader d'un service
+
 
 ## Lancer les container docker 
 
@@ -67,7 +72,8 @@ dans un container et communique avec le démon docker via l'api.
 
 => Question API REST HTTP ou socket unix monté dans le container ?
 
-## Controlleur
+
+## Contrôleur
 
 Vue de l'extérieur de la grille les différentes tâches dévolue au contrôleur
 sont les suivantes :
@@ -88,10 +94,12 @@ d'attentes :
 ou une session shell interactive.
 - Les constructeurs : pour lancer les constructions d'application.
 
+
 # Au niveau supérieur
 
 Au dessus de la grille nous trouvons les briques capable de router les
 services, de construire des applications et de les lancer.
+
 
 ## Routeur http
 Un grand nombre des services sont exposés en http, faire de l'équilibrage de
@@ -103,6 +111,7 @@ Pour compenser ce problème, flynn.io est en train d'écrire un nouveau service
 "strowger" qui se chargera justement de faire ce routage et de prendre en
 compte dynamiquement depuis discoverd toutes les évolutions de configuration.
 
+
 ## Construire
 Construire une application c'est dans la majorité des cas rapatrier les
 dépendances et compiler le code source. Pour Heroku c'est dérouler le
@@ -111,15 +120,17 @@ Pour que la démonstration soit parlante, flynn.io a réalisé une première
 implémentation de flynn-builder capable de construire les application en
 suivant un Buildpack.
 
+
 ## un serveur de fichiers http
 Une fois les containers construit et près a être lancer il est nécéssaire
 d'avoir un référentiel d'images. 
 Le projet a fait le choix d'un référentiel accessible en REST : "shelf" au
-départ un simple dépot de fichier et plus tard probablement un proxy vers
+départ un simple dépôt de fichier et plus tard probablement un proxy vers
 swift, S3 ou hubic.
 
 À la fin de la construction, flynn-builder se charge aussi de sauvegarder
 l'image du container dans shelf
+
 
 ## Exécuter
 
@@ -129,6 +140,7 @@ avant d'enregistrer le service correspondant dans discoverd.
 
 Malheureusement ce processus lance les container en se connectant directement
 sur discoverd et flynn-host ... Probablement l'effet démo.
+
 
 # Un système construit avec lui même 
 
