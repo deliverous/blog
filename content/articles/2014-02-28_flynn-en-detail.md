@@ -2,10 +2,12 @@ Title: Flynn.io en détail
 Tags: flynn, tools
 Author: Thomas, Olivier
 Summary: Première plongé dans le code de fynn.io pour bien comprendre son fonctionnement. De retour de cette expérience très enrichissante.
-Status: draft
+Status: published
+
 
 *Flynn.io* se présente comme le Légo du PaaS. Basé sur le travail de [Russell Ackoff](http://knowledge.wharton.upenn.edu/article/idealized-design-how-bell-labs-imagined-and-created-the-telephone-system-of-the-future/) les briques sont toutes indépendantes et communiquent entre elles. On se retrouve avec un système modulaire et extensible composé de briques simples.
 
+![Lego]({filename}/images/lego_wall.jpg)
 
 # Une histoire de container
 
@@ -15,8 +17,6 @@ Dans ce cadre, il est important de séparer la configuration (l'adresse de mon s
 
 Pour lancer un container, il suffit alors de fusionner l'application et sa configuration et de demander au système une place dans la grille.
 
-![Architechture Flynn]({filename}/images/flynn-arch.png)
- 
 # Les briques de base de la grille
 
 
@@ -47,9 +47,6 @@ C'est le composant de [coreos](https://coreos.com/) pour gérer la configuration
 La grille est composée de machines physiques. Chaque machine héberge un docker mais il faut aussi un agent capable de lancer localement de nouveaux containers et de remonter un certain nombre de métriques pour aider le contrôleur à prendre ses décisions. 
 
 Cet agent c'est [flynn-host](https://github.com/flynn/flynn-host), il est lancé dans un container et communique avec le démon docker via l'api.
-
-=> Question API REST HTTP ou socket unix monté dans le container ?
-
 
 ## Contrôleur
 
@@ -100,6 +97,11 @@ Toujours dans une optique de démonstration nous trouvons le processus *flynn-ru
 Malheureusement ce processus lance les containers en se connectant directement sur *discoverd* et *flynn-host*... Probablement l'effet démo.
 
 
+![Architechture Flynn]({filename}/images/flynn-arch.png)
+
 # Un système construit avec lui-même 
 
 Il existe quelques briques qui ne sont pas automatiquement lancées et distribuées dans le système, le cluster *etcd* en fait partie. La liste des nœuds du cluster *etcd* est connue et partagée par tous. 
+
+---
+Photo par [StartTheDay](http://www.flickr.com/photos/37355847@N02/3657619003)
