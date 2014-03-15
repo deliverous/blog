@@ -9,6 +9,7 @@
                         {% include "includes/article_info.html" %}
                     </div>
                 {% endif %}
+                <div class="icon-summary"><img src="{{ article.icon }}"></div>
                 <div class="summary">{{ article.summary }}
                     {% include 'includes/comment_count.html' %}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
