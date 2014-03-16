@@ -55,7 +55,16 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
 #, 'markdown_checklist.extension'
 
 PLUGIN_PATH = "plugins"
-PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes"]
+PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes", "thumbnailer"]
+
+IMAGE_PATH = 'images'
+THUMBNAIL_DIR = 'images/thumbnails'
+THUMBNAIL_SIZES = {
+    '_square': '150',
+#    'thumbnail_wide': '150x?',
+#    'thumbnail_tall': '?x150',
+}
+
 
 # static content
 STATIC_PATHS = ['images']
