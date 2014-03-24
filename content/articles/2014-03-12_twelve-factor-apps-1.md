@@ -1,4 +1,4 @@
-Title: The Twelve Factor Apps
+Title: The Twelve Factor Apps 1/2
 Tags: 12factor, heroku
 Author: Thomas, Olivier
 Summary: Etude de *The Twelve Factor Apps*. La théorisation d'une bonne application par Adam Wiggins l'un des fondateurs de [Heroku](https://www.heroku.com/)
