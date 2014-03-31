@@ -11,10 +11,11 @@
                     </div>
                 {% endif %}
                 <div class="summary">
-                    <img style="float:left" src="{{ article.icon }}">
+                    <img src="{{ article.icon }}" class="img-rounded pull-left icon-summary">
                     {{ article.summary }}
                     {% include 'includes/comment_count.html' %}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">plus ...</a>
+                    <div class="clearfix"></div>
                 </div>
             </article>
             <hr/>

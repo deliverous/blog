@@ -7,6 +7,8 @@ SITENAME = u'Deliverous Blog'
 SITEURL = 'http://blog.deliverous.com'
 THEME = './theme'
 
+# Pour avoir des urls reative en dev
+#RELATIVE_URLS = True
 
 TIMEZONE = 'Europe/Paris'
 
