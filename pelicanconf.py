@@ -60,6 +60,7 @@ PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes", "thumbnailer"]
 IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'images/thumbnails'
 THUMBNAIL_SIZES = {
+    '_icon': '75',
     '_square': '150',
 #    'thumbnail_wide': '150x?',
 #    'thumbnail_tall': '?x150',
