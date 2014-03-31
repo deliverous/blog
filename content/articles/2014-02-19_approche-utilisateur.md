@@ -50,5 +50,6 @@ Il sera possible de déclencher des pipelines de deux façons différentes :
 
 de cette façon nous couvrons tous les cas d'usages.
 
+
 ---
 Photo par [Steven Shorrock](https://www.flickr.com/photos/highersights/6231641551/)

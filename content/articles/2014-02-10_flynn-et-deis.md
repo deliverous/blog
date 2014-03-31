@@ -3,9 +3,11 @@ Tags: tools, flynn, deis
 Author: Olivier
 Summary: Rapide comparaison de flynn.io et de deis.io
 Status: published
+Icon: /images/thumbnails/survol__square.jpg
 
 Deux projets intéressants à regarder pour ceux qui veulent faire du PaaS. Les deux projets sont très jeunes. J'ai eu beaucoup de mal à les mettre en œuvre du à des bugs.
 
+![Survol]({filename}/images/survol.jpg)
 
 # Flynn.io
 
@@ -24,3 +26,7 @@ Deis est écrit en Django avec Celery, ils utilisent docker pour les container, 
 # Conclusion
 
 Mon choix se porterai sur Flynn. Il y a moins d'empilement de technologie.
+
+
+---
+Photo par [Patrick Gaudin](https://www.flickr.com/photos/voyages-provence/6181609778/)
