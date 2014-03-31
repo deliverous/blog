@@ -3,9 +3,11 @@ Tags: utilisateur
 Author: Thomas
 Summary: Après avoir recueilli l'avis de beaucoup de personnes voici comment nous imaginons l'usage de deliverous
 Status: published
+Icon: /images/thumbnails/listen__square.jpg
 
 La compilation fut longue, plusieurs mois pour interroger patiemment de très nombreuses personnes. Le résultat est là voici ce que nous imaginons, à vous de nous dire si nous vous avons correctement compris.
 
+![Cluster]({filename}/images/listen.jpg)
 
 # Rapide et simple
 
@@ -48,3 +50,5 @@ Il sera possible de déclencher des pipelines de deux façons différentes :
 
 de cette façon nous couvrons tous les cas d'usages.
 
+---
+Photo par [Steven Shorrock](https://www.flickr.com/photos/highersights/6231641551/)
