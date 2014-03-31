@@ -3,7 +3,7 @@ Tags: flynn, tools
 Author: Thomas, Olivier
 Summary: Première plongé dans le code de *Fynn.io* pour bien comprendre son fonctionnement. Retour de cette expérience très enrichissante.
 Status: published
-Icon: /images/thumbnails/lego_wall__icon.jpg
+Icon: /images/thumbnails/lego_wall__square.jpg
 
 
 *Flynn.io* se présente comme le Légo du PaaS. Basé sur le travail de [Russell Ackoff](http://knowledge.wharton.upenn.edu/article/idealized-design-how-bell-labs-imagined-and-created-the-telephone-system-of-the-future/) les briques sont toutes indépendantes et communiquent entre elles. On se retrouve avec un système modulaire et extensible composé de briques simples.
