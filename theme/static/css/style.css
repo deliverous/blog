@@ -2,10 +2,12 @@ body {
     padding-top: 70px;
     background: url("../images/cloud.jpg") no-repeat center fixed;
     background-size: cover;
+    font-size: 19px;
 }
 
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
+    font-size: 14px;
 }
 
 /* for list-groups nested within a list-group-item, reset the bottom margin */
