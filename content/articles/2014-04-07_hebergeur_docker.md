@@ -7,7 +7,7 @@ Icon: /images/thumbnails/container__square.jpg
 
 Héberger votre chaîne de déploiement continu implique d'avoir à notre disposition un hébergeur disposant d'une API de haut niveau. Que ce soit pour déployer nos applications ou les vôtres, cet hébergeur est indispensable.
 
-Nous imaginions tout simplement une API capable de prendre en charge des applications au sens [12 factor apps](http://12factor.net/), que l'on puisse lui dire "voici une application", "elle écoute sur le port 80", ou "la charge va fortement augmenter, il nous faut 7 instances". 
+Nous imaginions tout simplement une API capable de prendre en charge des applications au sens [Twelve Factor Apps](http://12factor.net/), que l'on puisse lui dire "voici une application", "elle écoute sur le port 80", ou "la charge va fortement augmenter, il nous faut 7 instances". 
 
 N'ayant pas trouvé cet hébergeur, nous souhaitons vous le proposer.
 
@@ -31,7 +31,7 @@ Sans se soucier des pannes matériels, des mises à jours de sécurité, du rés
 # Pourquoi Docker ?
 
 Un certain nombre de contraintes sur la façon de construire et de déployer des applications nous semblaient implicites ... Probablement le fruit de nos expériences. 
-Après avoir lu [12 factor apps](http://12factor.net/), plus de doute possible, une fois construite, une application doit embarquer l'ensemble de ses dépendances y compris système. 
+Après avoir lu [Twelve Factor Apps](http://12factor.net/), plus de doute possible, une fois construite, une application doit embarquer l'ensemble de ses dépendances y compris système. 
 
 Pour adapter une application à son environnent, il suffit de définir quelques variables d'environnement, ce qui nous rapproche fortement du concept d'appliance. En effet pour embarquer toutes ses dépendances, une application doit être construite avec le système d'exploitation qui permet de la faire fonctionner.
 
