@@ -38,8 +38,8 @@ Pour adapter une application à son environnent, il suffit de définir quelques 
 Avec Docker le concept d'appliance est sublimé, il n'y a quasiment pas de surcoût lié à la virtualisation et il n'est plus utile de maintenir le système d'exploitation. À chaque construction du container, la couche système est mise à jour.
 
 Le slogan de Docker résonne en nous comme une vérité : 
-"Build once ... run anywhere".
-Ce que l'on peut traduire par "Construire une fois ... Lancer n'importe où". 
+"Build once... run anywhere".
+Ce que l'on peut traduire par "Construire une fois... Lancer n'importe où". 
 Le sous-titre est encore plus explicite : "Le container que le développeur construit et teste sur son PC, peut tourner et passer à l'échelle en production".
 
 Voilà une devise qui rime avec Deliverous. 
@@ -52,7 +52,7 @@ Voilà pourquoi nous avons choisi Docker comme unique format de container d'appl
 
 Une fois Docker sélectionné comme unique format de container, nous avons cherché un hébergeur en Europe capable de faire tourner nos containers. 
 
-Pour garder l'analogie avec les containers de marchandises, nous avons cherché un porte-conteneurs universel respectant nos valeurs... Seulement dans le fret, les "UCC" (Universal Container Carrier) se sont généralisés à partir des années 70, alors que dans l'informatique le format universel de container est loin d'être normalisé ... 
+Pour garder l'analogie avec les containers de marchandises, nous avons cherché un porte-conteneurs universel respectant nos valeurs... Seulement dans le fret, les "UCC" (Universal Container Carrier) se sont généralisés à partir des années 70, alors que dans l'informatique le format universel de container est loin d'être normalisé... 
 
 Difficile dans ces conditions de trouver un hébergeur qui nous garantit à la fois une bonne connectivité à internet, la sécurité des données et la protection de la vie privée des clients. 
 
@@ -64,7 +64,7 @@ Nous avons donc décidé de monter notre propre plate-forme Docker.
 
 # Conclusion
 
-Nous avons besoin d'un hébergeur Docker qui respecte nos contraintes, mais peut-être que vous aussi ... Nous avons donc décidé de travailler avec vous pour ouvrir notre solution de cloud Docker. Rendez-vous sur le site de [Deliverous](http://deliverous.com/Docker) pour participer à l'aventure.
+Nous avons besoin d'un hébergeur Docker qui respecte nos contraintes, mais peut-être que vous aussi... Nous avons donc décidé de travailler avec vous pour ouvrir notre solution de cloud Docker. Rendez-vous sur le site de [Deliverous](http://deliverous.com/Docker) pour participer à l'aventure.
 
 ---
 Photo par [Kristi](https://www.flickr.com/photos/kristi_decourcy/9154543163)
