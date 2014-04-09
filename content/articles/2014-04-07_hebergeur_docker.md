@@ -13,11 +13,11 @@ N'ayant pas trouvé cet hébergeur, nous souhaitons vous le proposer.
 
 ![Survol]({filename}/images/container.jpg)
 
-# Le "nuage" c'est quoi ?
+# Le "nuage", c'est quoi ?
 
-Cloud, un mot très à la mode pour décrire ce que d'autres nomment des services hébergés. Ce mot valise illustre pourtant un réel changement de consommation de l'informatique. 
+Cloud, un mot très à la mode pour décrire ce que d'autres nomment des services hébergés. Ce mot-valise illustre pourtant un réel changement de consommation de l'informatique. 
 
-Il était une époque où chaque entreprise entretenait sa propre source d'énergie, une machine à vapeur, une génératrice électrique, etc. Aujourd'hui toutes les entreprises ou presque utilisent l'électricité. Elles ne se posent même plus la question du courant continu ou alternatif. Nous pensons que de la même façon, demain le logiciel informatique sera une commodité comme l'eau courante ou l'électricité aujourd'hui, l'informatique à la demande, voilà l'avenir.
+Il était une époque où chaque entreprise entretenait sa propre source d'énergie, une machine à vapeur, une génératrice électrique, etc. Aujourd'hui, toutes les entreprises ou presque utilisent l'électricité. Elles ne se posent même plus la question du courant continu ou alternatif. Nous pensons que de la même façon, demain le logiciel informatique sera une commodité comme l'eau courante ou l'électricité aujourd'hui, l'informatique à la demande, voilà l'avenir.
 
 Dans ce cadre, nous imaginons un hébergeur capable de répondre aux besoins suivants : 
 
@@ -30,7 +30,7 @@ Sans se soucier des pannes matériels, des mises à jours de sécurité, du rés
 
 # Pourquoi Docker ?
 
-Un certain nombre de contraintes sur la façon de construire et de déployer des applications nous semblaient implicites ... Probablement le fruit de nos expériences. 
+Un certain nombre de contraintes sur la façon de construire et de déployer des applications nous semblaient implicites... Probablement le fruit de nos expériences. 
 Après avoir lu [Twelve Factor Apps](http://12factor.net/), plus de doute possible, une fois construite, une application doit embarquer l'ensemble de ses dépendances y compris système. 
 
 Pour adapter une application à son environnent, il suffit de définir quelques variables d'environnement, ce qui nous rapproche fortement du concept d'appliance. En effet pour embarquer toutes ses dépendances, une application doit être construite avec le système d'exploitation qui permet de la faire fonctionner.
@@ -43,7 +43,7 @@ Ce que l'on peut traduire par "Construire une fois ... Lancer n'importe où".
 Le sous-titre est encore plus explicite : "Le container que le développeur construit et teste sur son PC, peut tourner et passer à l'échelle en production".
 
 Voilà une devise qui rime avec Deliverous. 
-Une fois construite l'application doit pouvoir être testée, éprouvée, dans de nombreux contextes avant de passer en production. 
+Une fois construite, l'application doit pouvoir être testée, éprouvée, dans de nombreux contextes avant de passer en production. 
 Elle doit pouvoir suivre son pipeline de mise en production sans risquer la remise en cause des tests.
 
 Voilà pourquoi nous avons choisi Docker comme unique format de container d'application.
@@ -54,17 +54,17 @@ Une fois Docker sélectionné comme unique format de container, nous avons cherc
 
 Pour garder l'analogie avec les containers de marchandises, nous avons cherché un porte-conteneurs universel respectant nos valeurs... Seulement dans le fret, les "UCC" (Universal Container Carrier) se sont généralisés à partir des années 70, alors que dans l'informatique le format universel de container est loin d'être normalisé ... 
 
-Difficile dans ces conditions de trouver un hébergeur qui nous garantisse à la fois une bonne connectivité à internet, la sécurité des données et la protection de la vie privée des clients. 
+Difficile dans ces conditions de trouver un hébergeur qui nous garantit à la fois une bonne connectivité à internet, la sécurité des données et la protection de la vie privée des clients. 
 
 Vous avez été nombreux à nous parler de l'affaire Prism et de ses conséquences sur la confiance de vos clients. Nous avons donc cherché un hébergeur Docker en Europe, pas un hébergeur avec un bureau en Europe et un siège social soumis à "patriot-act" mais une société européenne qui n'utiliserait aucune brique venue des États-Unis (ni [amazon EC2](https://aws.amazon.com/ec2/), ni [digital ocean](https://www.digitalocean.com/), ...).
 
-Et nous n'avons rien trouvé, certains sont capables de monter en charge rapidement mais ils ne garantissent pas le respect de la vie privée, et pour d'autres c'est l'inverse.
+Et nous n'avons rien trouvé, certains sont capables de monter en charge rapidement, mais ils ne garantissent pas le respect de la vie privée, et pour d'autres, c'est l'inverse.
 
 Nous avons donc décidé de monter notre propre plate-forme Docker. 
 
 # Conclusion
 
-Nous avons besoin d'un hébergeur Docker qui respecte nos contraintes mais peut-être que vous aussi ... Nous avons donc décidé de travailler avec vous pour ouvrir notre solution de cloud Docker. Rendez-vous sur le site de [Deliverous](http://deliverous.com/Docker) pour participer à l'aventure.
+Nous avons besoin d'un hébergeur Docker qui respecte nos contraintes, mais peut-être que vous aussi ... Nous avons donc décidé de travailler avec vous pour ouvrir notre solution de cloud Docker. Rendez-vous sur le site de [Deliverous](http://deliverous.com/Docker) pour participer à l'aventure.
 
 ---
 Photo par [Kristi](https://www.flickr.com/photos/kristi_decourcy/9154543163)
