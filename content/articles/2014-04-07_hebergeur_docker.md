@@ -64,7 +64,7 @@ Nous avons donc décidé de monter notre propre plate-forme Docker.
 
 # Conclusion
 
-Nous avons besoin d'un hébergeur Docker qui respecte nos contraintes, mais peut-être que vous aussi... Nous avons donc décidé de travailler avec vous pour ouvrir notre solution de cloud Docker. Rendez-vous sur le site de [Deliverous](http://deliverous.com/Docker) pour participer à l'aventure.
+Nous avons besoin d'un hébergeur Docker qui respecte nos contraintes mais peut-être que vous aussi ... Nous avons donc décidé de travailler avec vous pour ouvrir notre solution de cloud Docker. Rendez-vous sur le site de [Deliverous](http://deliverous.com/docker) pour participer à l'aventure.
 
 ---
 Photo par [Kristi](https://www.flickr.com/photos/kristi_decourcy/9154543163)

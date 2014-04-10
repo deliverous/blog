@@ -35,6 +35,7 @@ LINKS =  (('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.
 #          ('Another social link', '#'),)
 
 
+DISQUS_SITENAME='blogdeliverous'
 
 
 # Theme customisation
