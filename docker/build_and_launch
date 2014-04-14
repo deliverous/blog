@@ -1,0 +1,16 @@
+echo "Reconstruction des pages"
+make html
+
+echo "Construction du container"
+sudo docker build -t deliverous/blog .
+
+echo "Export du container au format tgz"
+sudo docker save deliverous/blog | gzip -9 > /tmp/blog.tgz
+
+echo "Import du container sur la plate-forme deliverous"
+cat /tmp/blog.tgz | ssh root@hv-01.deliverous.net docker import - deliverous/blog
+scp docker/blog.service root@hv-01.deliverous.net:/tmp/
+
+echo "Lancement du container"
+ssh root@hv-01.deliverous.net fleetctl submit /tmp/blog.service
+ssh root@hv-01.deliverous.net fleetctl start /tmp/blog.service
