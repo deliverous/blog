@@ -1,0 +1,8 @@
+[Unit]
+Description=Blog Deliverous
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=/usr/bin/docker run --name=deliverous_blog --rm=true -p 80:80  deliverous/blog
+Restart=on-failure
