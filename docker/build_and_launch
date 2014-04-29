@@ -10,7 +10,7 @@ echo "Export du container au format tgz"
 sudo docker save deliverous/blog | gzip -9 > $DIR/blog.tgz
 
 echo "Import du container sur la plate-forme deliverous"
-cat $DIR/blog.tgz | ssh root@hv-01.deliverous.net docker load
+zcat $DIR/blog.tgz | ssh root@hv-01.deliverous.net docker load
 scp docker/blog.service root@hv-01.deliverous.net:/tmp/
 
 echo "Lancement du container"
