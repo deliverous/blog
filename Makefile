@@ -49,6 +49,9 @@ help:
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '                                                                       '
+	@echo '   make docker                      build docker image                 '
+	@echo '   make docker_push                 push docker image on docker.io     '
+	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
@@ -105,4 +108,9 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
+docker: regenerate
+	docker build -t deliverous/blog .
+
+docker_push: docker
+	docker push deliverous/blog
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

@@ -1,4 +1,4 @@
-FROM wheezy
+FROM deliverous/wheezy
 MAINTAINER olivier.albiez@deliverous.com
 MAINTAINER thomas.clavier@deliverous.com
 
