@@ -3,4 +3,5 @@
 *.log
 *.aux
 *.pyc
+*.pid
 output
