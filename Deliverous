@@ -1,5 +1,0 @@
-blog:
-  image: 192.168.33.11:5000/deliverous/blog
-  description: "Blog Deliverous"
-  ports:
-  - "192.168.33.200:80:80"
