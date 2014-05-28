@@ -20,9 +20,22 @@ Nous y avons eu des discussions très interessantes techniquement.
 
 # Les discussions
 
-## [OpenStack](https://www.openstack.org/)
+## Cloud Management Platforms
 
-## [OpenNebula](http://opennebula.org/)
+Pour nous les Cloud Management Platforms (CMP) étaient des outils pour gérer des machines virtuelles et pas des containers. Cela nous paraissait détourner l'outil. D'autre part ce sont des solutions lourdes et complexes à mettre en place.
+
+Nous cherchions des solutions simples et efficaces (KISS) pour notre objectif. Nous pensions bien utiliser des briques d'*OpenStack* comme swift. Docker c'est imposé comme une solution valable lors de nos échanges avec des clients.
+
+Lors du salon, nous avons pu échanger avec Loïc qui nous a convaincu de redonner une chance à *OpenStack*. En effet, ce CMP gère déjà enormément de choses, comme le réseau, les clients, les projets, ... D'autant plus qu'il y a des projet pour supporter *Docker* dans *OpenStack*
+
+
+
+[*OpenStack*](https://www.openstack.org/)
+
+
+[OpenNebula](http://opennebula.org/)
+
+
 
 ## [Ceph](http://ceph.com/)
 
