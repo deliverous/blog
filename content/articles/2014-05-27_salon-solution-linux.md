@@ -1,7 +1,7 @@
 Title: Solution Linux 2014
 Tags: salon
 Author: Thomas, Olivier
-Summary: Notre présence au salon Solution Linux 2014.
+Summary: Retour sur deux jours d'échanges et d'apprentissage au salon Solution Linux 2014.
 Status: published
 Icon: /images/thumbnails/solution-linux-2014__square.png
 
