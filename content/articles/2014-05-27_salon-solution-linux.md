@@ -53,7 +53,11 @@ Nous avons aussi rencontré deux personnes qui travaillent sur le projet [Solum]
 
 ## [Ceph](http://ceph.com/)
 
-Un filesystem distribué, utilisable pour stocker les données des containers clients et faciliter la migration des containers d'une machine à une autre. Le seul inconvénient que nous avons perçu est qu'il faille au moins 3 nœuds pour démarrer un cluster ceph.
+Nous avons profité du salon pour chercher un filesystem utilisable pour stocker les données des containers clients et faciliter la migration des containers d'une machine à une autre.
+
+Nous avions en tête une solution genre SAN, mais nous souhaitions aussi une solution libre. 
+
+Le seul inconvénient de Ceph que nous avons perçu est qu'il faille au moins 3 nœuds pour démarrer un cluster.
 
 
 # Table ronde
