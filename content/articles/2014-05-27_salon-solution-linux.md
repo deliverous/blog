@@ -2,7 +2,7 @@ Title: Solution Linux 2014
 Tags: salon
 Author: Thomas, Olivier
 Summary: Notre présence au salon Solution Linux 2014.
-Status: draft
+Status: published
 Icon: /images/thumbnails/solution-linux-2014__square.png
 
 Étant membre du réseau [Libre Entreprise](http://www.libre-entreprise.org/) chaque année nous nous retrouvons tous avec grand plaisir au salon [Solutions Linux, Libres et Open Source](http://www.solutionslinux.fr/), cette année c'était les 20 et 21 mai. Le Stand de l'association était comme chaque année un lieu d'échange. L'occasion de présenter nos valeurs associatives, mais aussi nos différents produits. 
@@ -33,7 +33,7 @@ Pour nous, les Cloud Management Platforms (CMP) étaient des outils pour gérer 
 
 Nous cherchions des solutions simples et efficaces (KISS) pour notre objectif. Nous pensions bien utiliser des briques d'*OpenStack* comme swift mais tout prendre semblait aberrant. Nos échanges avec des spécialistes d'Openstack ont remis nos choix en cause.
 
-Lors du salon, nous avons pu échanger avec Loïc qui nous a convaincu de redonner une chance à *OpenStack*. En effet, ce CMP gère déjà énormément de choses, comme le réseau, les clients, les projets, ... D'autant plus qu'il y a des projets pour supporter *Docker* dans *OpenStack*.
+Lors du salon, nous avons pu échanger avec [Loïc](http://dachary.org/) qui nous a convaincu de redonner une chance à *OpenStack*. En effet, ce CMP gère déjà énormément de choses, comme le réseau, les clients, les projets, ... D'autant plus qu'il y a des projets pour supporter *Docker* dans *OpenStack*.
 
 Voici quelques liens qui nous ont été conseillés :
 
