@@ -112,3 +112,7 @@ Ainsi, le passage à l'échelle est très simple, il suffit de lancer plus de pr
 
 Un grand nombre d'applications web utilisent une session en mémoire pour sauver des données de l'utilisateur.
 Pour garantir l'indépendance des processus il est préférable d'utiliser memcahed ou redis pour partager ces sessions entre les processus
+
+---
+Photo par [Simona](https://www.flickr.com/photos/mammaoca2008/4344228722)
+
