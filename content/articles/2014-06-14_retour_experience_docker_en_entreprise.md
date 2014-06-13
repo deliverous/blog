@@ -1,17 +1,17 @@
 
-Retour d'expérience de l'intégration de Docker dans une grosse entreprise : 810 millions de CA avec plus de 6000 salariés.
+Retour d'expÃ©rience de l'intÃ©gration de Docker dans une grosse entreprise : 810 millions de CA avec plus de 6000 salariÃ©s.
 
 2 nouveaux exemples de containers docker pour du tomcat : 
 - docker-centos-tomcatX
 - docker-centos-tomcat
 
 workflow d'utilisation :
-- intégration reçois un war et des éléments de configuration
-- intégration produit un container avec tout les éléments de conf pour tous les environements et son expertise (sécurité, normalisation, etc)
-- intégration publie le container sur la registry avec un numéro de version
-- intégration déploie le container en recette
-- une fois la recette de validé par les équipe équipe de développements ou les acheteurs l'équipe de run va déployer le container en qualif 
-- une fois validé en qualification l'exploitation va déployer en production
+- intÃ©gration reÃ§ois un war et des Ã©lÃ©ments de configuration
+- intÃ©gration produit un container avec tout les Ã©lÃ©ments de conf pour tous les environements et son expertise (sÃ©curitÃ©, normalisation, etc)
+- intÃ©gration publie le container sur la registry avec un numÃ©ro de version
+- intÃ©gration dÃ©ploie le container en recette
+- une fois la recette de validÃ© par les Ã©quipe Ã©quipe de dÃ©veloppements ou les acheteurs l'Ã©quipe de run va dÃ©ployer le container en qualif 
+- une fois validÃ© en qualification l'exploitation va dÃ©ployer en production
 
-Comme chaque container est versionné le retour arrière est simplifié, il suffit de relancer l'ancien container.
+Comme chaque container est versionnÃ© le retour arriÃ¨re est simplifiÃ©, il suffit de relancer l'ancien container.
 
