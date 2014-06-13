@@ -6,7 +6,7 @@ Status: draft
 Icon: /images/thumbnails/logojug__square.jpg
 
 
-Assuré par David Gageot et Nicolas De Loof, le ch'tijug organisait mercredi soir une conférence sur Docker et Google Cloud.  
+Assuré par [David Gageot](http://blog.javabien.net/) et [Nicolas De Loof](http://blog.loof.fr/), le [ch'tijug](http://chtijug.org/) organisait mercredi soir une conférence sur [Docker](http://docker.io) et [Google Cloud](http://cloud.google.com/).  
 C'est avec grand plaisir que j'ai suivi cette session. 
 
 ![Survol]({filename}/images/logojug.jpg)
@@ -24,16 +24,15 @@ Les Cgroups sont arrivés dans le noyau Linux suite aux travaux de 2006 de Paul 
 
 La pédagogie était elle aussi au rendez-vous, en quelques slides ils ont su nous montrer les avantages de performance face à la virtualisation.
 
-Une autre découverte, boot2docker qui permet de simplifier grandement l'usage de docker sur le poste de développement. Imaginez une machine virtuelle de 27Mo qui boot en 5s sur laquelle vous pouvez créer autant de container docker que vous voulez. Avec un répertoire partagé pour continuer à travailler avec votre IDE préféré.
+Une autre découverte, [boot2docker](http://boot2docker.io/) qui permet de simplifier grandement l'usage de docker sur le poste de développement. Imaginez une machine virtuelle de 27Mo qui boot en 5s sur laquelle vous pouvez créer autant de container docker que vous voulez. Avec un répertoire partagé pour continuer à travailler avec votre IDE préféré.
 
-La Dockercon s'étant déroulé les 9 et 10, c'était le moment idéal pour relayer un certain nombre d'annonces parmi lesquelles :
+La [Dockercon](http://dockercon.com/) s'étant déroulé les 9 et 10, c'était le moment idéal pour relayer un certain nombre d'annonces parmi lesquelles :
 
-* cAdvisor un outil pour faire des statiques sur les containers
-* Kunerbetes un outil de schéduling de container Docker
+* [cAdvisor](https://github.com/google/cadvisor) un outil pour faire des statiques sur les containers
+* [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes) un outil de schéduling de container Docker
 * la nomination de Éric Brewer (VP of Google Infrastructure) au comité de gouvernance Docker
 * libchan, libswarm et libcontainer 3 bibliothèques pour facilité la coopération entre les containers
-* et la version 1.0 de Docker fraichement arrivé lundi.
-https://twitter.com/DockerCon
+* et [la version 1.0](http://blog.docker.com/2014/06/its-here-docker-1-0/) de Docker fraichement arrivé lundi.
 
 
 # Des échanges
@@ -47,6 +46,6 @@ Certains de nos clients sont des développeurs d'indépendants qui font du site 
 
 # Futur de Docker
 
-Même s'il est difficile de prédire le futur de Docker, deux indices nous poussent à dire que la technologie ne sera pas abandonnée dans quelques mois.
+Même s'il est difficile de prédire le futur de Docker, deux indices nous poussent à dire que la technologie ne sera pas rapidement abandonnée.
 Le premier c'est l'engouement de certains acteurs comme Google, Coudbees, Red Hat, Rackspace, Amazon, Facebook et bien d'autres.
 L'autre indice c'est l'organisation même du projet, un projet libre avec un comité de gouvernance totalement indépendant de l'éditeur de Docker.
