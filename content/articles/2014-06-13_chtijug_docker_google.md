@@ -2,7 +2,7 @@ Title: Une conférence sur Docker et Google Cloud organisé par le ch'tijug
 Tags: Docker, ch'tijug
 Author: Thomas
 Summary: Assuré par David Gageot et Nicolas De Loof, le ch'tijug organisait mercredi soir une conférence sur Docker et le Cloud Google. C'est avec grand plaisir que j'ai suivi cette session. 
-Status: draft
+Status: published
 Icon: /images/thumbnails/logojug__square.png
 
 
@@ -49,3 +49,6 @@ Certains de nos clients sont des développeurs d'indépendants qui font du site 
 Même s'il est difficile de prédire le futur de Docker, deux indices nous poussent à dire que la technologie ne sera pas rapidement abandonnée.
 Le premier c'est l'engouement de certains acteurs comme Google, Coudbees, Red Hat, Rackspace, Amazon, Facebook et bien d'autres.
 L'autre indice c'est l'organisation même du projet, un projet libre avec un comité de gouvernance totalement indépendant de l'éditeur de Docker.
+
+---
+Image par [ch'tijug](http://chtijug.org/)

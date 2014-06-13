@@ -65,5 +65,5 @@ Le mercredi, nous avons participé à la table ronde sur l'adoption du logiciel 
 Les échanges suivant ont principalement porté sur la capacité à proprement surveiller ces applications. Sur la capacité des différentes équipes de l'entreprise à s'approprier les outils de collecte de métrique, sur les partages d'outils dans l'ensemble de l'entreprise, sur l'alignement de toutes ces équipes sur un même objectif... En bref nous avons parlé devops.
 
 ---
-Photo par [Tarsus](http://www.solutionslinux.fr/)
+Image par [Tarsus](http://www.solutionslinux.fr/)
 
