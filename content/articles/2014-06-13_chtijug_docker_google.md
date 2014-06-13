@@ -3,13 +3,13 @@ Tags: Docker, ch'tijug
 Author: Thomas
 Summary: Assuré par David Gageot et Nicolas De Loof, le ch'tijug organisait mercredi soir une conférence sur Docker et le Cloud Google. C'est avec grand plaisir que j'ai suivi cette session. 
 Status: draft
-Icon: /images/thumbnails/logojug__square.jpg
+Icon: /images/thumbnails/logojug__square.png
 
 
 Assuré par [David Gageot](http://blog.javabien.net/) et [Nicolas De Loof](http://blog.loof.fr/), le [ch'tijug](http://chtijug.org/) organisait mercredi soir une conférence sur [Docker](http://docker.io) et [Google Cloud](http://cloud.google.com/).  
 C'est avec grand plaisir que j'ai suivi cette session. 
 
-![Survol]({filename}/images/logojug.jpg)
+![Survol]({filename}/images/logojug.png)
 
 David Gageot avait résumé le sujet de cette façon :
 
