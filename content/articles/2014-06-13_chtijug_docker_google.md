@@ -47,7 +47,7 @@ Certains de nos clients sont des développeurs d'indépendants qui font du site 
 # Futur de Docker
 
 Même s'il est difficile de prédire le futur de Docker, deux indices nous poussent à dire que la technologie ne sera pas rapidement abandonnée.
-Le premier c'est l'engouement de certains acteurs comme Google, Coudbees, Red Hat, Rackspace, Amazon, Facebook et bien d'autres.
+Le premier c'est l'engouement de certains acteurs comme Google, Cloudbees, Red Hat, Rackspace, Amazon, Facebook et bien d'autres.
 L'autre indice c'est l'organisation même du projet, un projet libre avec un comité de gouvernance totalement indépendant de l'éditeur de Docker.
 
 ---
