@@ -39,7 +39,7 @@ DISQUS_SITENAME='blogdeliverous'
 
 
 # Theme customisation
-MENUITEMS = (('L\'équipe', 'http://deliverous.com/#equipe'),)
+MENUITEMS = (('Deliverous', 'http://deliverous.com/'), ('L\'équipe', 'http://deliverous.com/#equipe'),)
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 
