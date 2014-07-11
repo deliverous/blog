@@ -25,7 +25,7 @@ Docker utilise lxc et les cgroupes pour isoler les containers entre eux, or c'es
 # Red Hat ou CentOS ?
 
 Ça commence par une histoire de licence, d'argent, de niveau d'expertise ... Et ça finit par un choix.
-En bref l'histoire du jour s'inspire d'un master en Red Hat 6.2, à migrer en CentOS pour appliquer les mises à jour et de temps en temps à remettre en Red Hat avant l'enregistrement sur le [rhn](http://rhn.redhat.com).
+En bref, l'histoire du jour s'inspire d'un master en Red Hat 6.2, à migrer en CentOS pour appliquer les mises à jour et de temps en temps à remettre en Red Hat avant l'enregistrement sur le [rhn](http://rhn.redhat.com).
 
 ## Migration en CentOS 
 
@@ -97,9 +97,8 @@ La registry est lancé par un script d'init standard :
 
 # Conclusion
 
-Arrivé là, vous avez un serveur Docker avec une registry, de quoi rapidement monter un environement pour démontrer par l'exemple de la viabilité de Docker.
-L'étape suivante, qui sera le sujet d'un autre article, consite à trouver la façon de travailler avec Docker qui apportera le plus à l'entreprise.
+Arrivé là, vous avez un serveur Docker avec une registry, de quoi rapidement monter un environnement pour démontrer par l'exemple de la viabilité de Docker.
+L'étape suivante, qui sera le sujet d'un autre article, consiste à trouver la façon de travailler avec Docker qui apportera le plus à l'entreprise.
 
 ---
 Le logo est la propriété du [projet CentOS](http://centos.org)
-
