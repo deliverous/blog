@@ -1,3 +1,9 @@
+Title: Retour d'expérience sur l'intégration de Docker en entreprise
+Tags: docker
+Author: Thomas
+Summary: Après avoir regarder comment installer Docker sur des Red Hat et des CentOS, nous attaquons le domaine de l'organisation des équipes autour de Docker.
+Status: draft
+Icon: /images/thumbnails/centos__square.png
 
 Retour d'expérience de l'intégration de Docker dans une grosse entreprise : 810 millions de CA avec plus de 6000 salariés.
 

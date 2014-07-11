@@ -50,6 +50,7 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '                                                                       '
 	@echo '   make docker                      build docker image                 '
+	@echo '   make docker_test                 run docker image on port 8000      '
 	@echo '   make docker_push                 push docker image on docker.io     '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
@@ -108,8 +109,13 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
-docker: regenerate
+docker: publish
 	docker build -t deliverous/blog .
+
+docker_test: docker
+	- docker stop blog
+	- docker rm blog
+	docker run --name blog -d -p 8000:80 deliverous/blog
 
 docker_push: docker
 	docker push deliverous/blog
