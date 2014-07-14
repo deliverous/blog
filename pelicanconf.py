@@ -14,7 +14,7 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'fr'
 
-FILENAME_METADATA = '(?P<slug>(?P<date>\d{4}-\d{2}-\d{2})_.*)'
+FILENAME_METADATA = '(?P<slug>(?P<date>\d{4}-\d{2}-\d{2})\..*)'
 USE_FOLDER_AS_CATEGORY = True
 DELETE_OUTPUT_DIRECTORY = True
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
