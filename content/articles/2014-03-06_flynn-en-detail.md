@@ -3,12 +3,12 @@ Tags: flynn, tools
 Author: Thomas, Olivier
 Summary: Première plongé dans le code de *Fynn.io* pour bien comprendre son fonctionnement. Retour de cette expérience très enrichissante.
 Status: published
-Icon: /images/thumbnails/lego_wall__square.jpg
+Icon: /images/thumbnails/2014-03-06_flynn-en-detail_illustration__square.jpg
 
 
 *Flynn.io* se présente comme le Légo du PaaS. Basé sur le travail de [Russell Ackoff](http://knowledge.wharton.upenn.edu/article/idealized-design-how-bell-labs-imagined-and-created-the-telephone-system-of-the-future/) les briques sont toutes indépendantes et communiquent entre elles. On se retrouve avec un système modulaire et extensible composé de briques simples.
 
-![Lego]({filename}/images/lego_wall.jpg)
+![Lego]({filename}/images/2014-03-06_flynn-en-detail_illustration.jpg)
 
 # Une histoire de container
 
@@ -98,7 +98,7 @@ Toujours dans une optique de démonstration nous trouvons le processus *flynn-ru
 Malheureusement ce processus lance les containers en se connectant directement sur *discoverd* et *flynn-host*... Probablement l'effet démo.
 
 
-![Architechture Flynn]({filename}/images/flynn-arch.png)
+![Architechture Flynn]({filename}/images/2014-03-06_flynn-en-detail_flynn-arch.png)
 
 # Un système construit avec lui-même 
 

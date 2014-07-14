@@ -2,7 +2,7 @@ Title: The Twelve Factor Apps 1/2
 Tags: 12factor, heroku
 Author: Thomas, Olivier
 Summary: Etude de *The Twelve Factor Apps*. La théorisation d'une bonne application par Adam Wiggins l'un des fondateurs de [Heroku](https://www.heroku.com/)
-Icon: /images/thumbnails/boxes__square.jpg
+Icon: /images/thumbnails/2014-05-26_twelve-factor-apps-1_illustration__square.jpg
 Status: published
 
 *The Twelve Factor Apps* c'est la définition des bonnes pratiques que doivent suivre un développeur pour produire une application portable et capable de passer à l'échelle. Ces 12 règles ont été rédigées par Adam Wiggins l'un des fondateurs de [Heroku](https://www.heroku.com/). 
@@ -12,7 +12,7 @@ Alors que le mouvement devops vise à aligner les équipes de l'entreprise sur d
 
 Cette série de 2 articles va nous permettre de comprendre ces règles.
 
-![Cluster]({filename}/images/boxes.jpg)
+![Cluster]({filename}/images/2014-05-26_twelve-factor-apps-1_illustration.jpg)
 
 # 1 - La base de code
 

@@ -3,12 +3,12 @@ Tags: deliverous
 Author: Thomas, Olivier
 Summary: Les difficultés téchniques que l'on a rencontré dans la mise au point de Déliverous
 Status: draft
-Icon: /images/thumbnails/ice-climbing__square.jpg
+Icon: /images/thumbnails/2014-07-14_points-chauds_illustration__square.jpg
 
 
 Depuis que nous développons le produit de Deliverous, nous rencontrons pleins de petites difficlutés technique. Cette article liste ces difficultés.
 
-![Climbing]({filename}/images/ice-climbing.jpg)
+![Climbing]({filename}/images/2014-07-14_points-chauds_illustration.jpg)
 
 
 - fleetctl et les noms d'unité

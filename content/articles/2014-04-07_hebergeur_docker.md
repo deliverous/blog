@@ -3,7 +3,7 @@ Tags: Docker, cloud
 Author: Thomas
 Summary: Pour la mise en place de notre solution de déploiement continu, nous avons commencé à étudier tout un ensemble d'outils pour assurer l'hébergement dans le nuage des différentes applications à déployer. Suite aux résultat de nos recherches, nous avons décidé de devenir notre propre hébergeur. 
 Status: published
-Icon: /images/thumbnails/container__square.jpg
+Icon: /images/thumbnails/2014-04-07_hebergeur_docker_illustration__square.jpg
 
 Héberger votre chaîne de déploiement continu implique d'avoir à notre disposition un hébergeur disposant d'une API de haut niveau. Que ce soit pour déployer nos applications ou les vôtres, cet hébergeur est indispensable.
 
@@ -11,7 +11,7 @@ Nous imaginions tout simplement une API capable de prendre en charge des applica
 
 N'ayant pas trouvé cet hébergeur, nous souhaitons vous le proposer.
 
-![Survol]({filename}/images/container.jpg)
+![Survol]({filename}/images/2014-04-07_hebergeur_docker_illustration.jpg)
 
 # Le "nuage", c'est quoi ?
 
