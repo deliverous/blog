@@ -5,8 +5,8 @@ Summary: Après avoir regarder comment installer Docker sur des Red Hat et des C
 Status: draft
 Icon: /images/thumbnails/fourmis__square.jpg
 
-Imaginons une entreprise : plus de 800 millions de CA et plus de 6000 salariés.
-Dans cette entreprise les gens en charge de l'intégration et de la bonne exécution des serveurs sont dans une situation difficile : mettre à jour un serveur pour les besoins d'une application représente un cout exorbitant, l'impacte sur les autres services n'est pas maitrisé et les tests impactent la production de l'entreprise. 
+Imaginons une entreprise : plus de 800 millions de CA et plus de 6&nbsp;000 salariés.
+Dans cette entreprise, les gens en charge de l'intégration et de la bonne exécution des serveurs sont dans une situation difficile : mettre à jour un serveur pour les besoins d'une application représente un cout exorbitant, l'impacte sur les autres services n'est pas maitrisé et les tests impactent la production de l'entreprise. 
 Pour réduire les risques et facilité la maintenance, cette entreprise a décidé de nous demander conseil.
 
 ![Cluster]({filename}/images/fourmis.png)
@@ -14,13 +14,13 @@ Pour réduire les risques et facilité la maintenance, cette entreprise a décid
 
 # Pourquoi Docker ?
  
-Comment cloisonner plus d'une trentaines d'applications web répartient dans une dixaine de tomcats sur seulement quelques serveurs ? la première réponse était : virtualisation ! Migrons chaque application dans un serveur et dupliquons le pour garantir la haute disponibilité et ... dupliquons le pour monter en charge. On arrive rapidement à plusieurs dixaines de servers à maintenir sans outil de gestion de configuration centralisé comme puppet, chef ou CFEngine. Pour les financiers c'était aussi un problème, la supervision de nuit facture à l'alerte mais aussi au nombre de serveurs surveillé.
-Donc nous avions deux options, monter un gestionaire de configuration de machines et le brancher sur les nouvelles machines ou monter du Docker. Les contraintes financières ont finalement tranchées, Docker avait gagné.
+Comment cloisonner plus d'une trentaine d'applications web réparties dans une dizaine de tomcats sur seulement quelques serveurs ? La première réponse était : virtualisation ! Migrons chaque application dans un serveur et dupliquons le pour garantir la haute disponibilité et... dupliquons-le pour monter en charge. On arrive rapidement à plusieurs dizaines de serveurs à maintenir sans outil de gestion de configuration centralisé comme puppet, chef ou CFEngine. Pour les financiers, c'était aussi un problème, la supervision de nuit facture à l'alerte, mais aussi au nombre de serveurs surveillé.
+Donc nous avions deux options, monter un gestionnaire de configuration de machines et le brancher sur les nouvelles machines ou monter du Docker. Les contraintes financières ont finalement tranché, Docker avait gagné.
 
 # Question d'organisation
 
 Dans cette entreprise, les études s'occupent d'acheter, de développer ou de paramétrer les applications métiers et les équipes de "Run", s'occupent de les faire fonctionner.
-Les études ont donc besoins de pouvoir faire tourner un grand nombre d'application en cous de paramétrage ou de développement. 
+Les études ont donc besoin de pouvoir faire tourner un grand nombre d'applications en cous de paramétrage ou de développement.
 Côté production, 
 
 # Architecture choisi
