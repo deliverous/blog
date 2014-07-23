@@ -2,4 +2,9 @@ server {
   root /var/www;
   index index.html index.htm;
   server_name localhost blog.deliverous.com;
+
+  if (!-f $request_filename) {
+    rewrite ^([^.]*)_(.*)$ $1.$2 permanent;
+  }
+
 }

@@ -185,3 +185,11 @@ body > div.container {
 footer {
     font-size: 0.5em;
 }
+
+.marge-left {
+  margin-left: 1em;
+}
+
+.marge-right {
+  margin-right: 1em;
+}
