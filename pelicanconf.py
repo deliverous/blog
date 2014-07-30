@@ -21,8 +21,9 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
 
 # Blogroll
-LINKS =  (('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),
-          ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),)
+#LINKS =  (('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),
+#          ('<i class="fa fa-github"></i> Deliverous', 'https://github.com/Deliverous'),
+#          ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),)
 
 
 #LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -31,8 +32,10 @@ LINKS =  (('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-#SOCIAL = (('Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),)
-#          ('Another social link', '#'),)
+SOCIAL = (('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),
+          ('<i class="fa fa-github"></i> Deliverous', 'https://github.com/Deliverous'), 
+          ('<i class="fa fa-twitter"></i> @DeliverousCom', 'https://twitter.com/DeliverousCom'),
+          ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),)
 
 
 DISQUS_SITENAME='blogdeliverous'
@@ -86,3 +89,5 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+
+GITHUB_USER='Deliverous'
