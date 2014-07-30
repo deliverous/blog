@@ -1,6 +1,5 @@
 FROM deliverous/wheezy
-MAINTAINER olivier.albiez@deliverous.com
-MAINTAINER thomas.clavier@deliverous.com
+MAINTAINER docker@deliverous.com
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y --no-install-recommends -q nginx && apt-get clean
