@@ -4,6 +4,7 @@ server {
   server_name localhost blog.deliverous.com;
 
   if (!-f $request_filename) {
+    rewrite ^(.*2014-07-28.ouverture-de-la-beta.html)$ http://blog.deliverous.com/2014-07-29.ouverture-de-la-beta.html permanent;
     rewrite ^([^.]*)_(.*)$ $1.$2 permanent;
   }
 
