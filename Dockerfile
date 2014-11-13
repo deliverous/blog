@@ -1,15 +1,9 @@
-FROM deliverous/wheezy
+FROM scratch
 MAINTAINER docker@deliverous.com
 
-ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y --no-install-recommends -q nginx && apt-get clean
-
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
-RUN rm /etc/nginx/sites-enabled/default
-ADD docker/site.nginx /etc/nginx/sites-enabled/blog
-
-ADD output/ /var/www/
+ADD goserve /usr/sbin/goserve
+ADD www/ /var/www/
 
 EXPOSE 80
 
-CMD ["/usr/sbin/nginx"]
+CMD ["/usr/sbin/goserve", "-port", "80", "-root", "/var/www"]

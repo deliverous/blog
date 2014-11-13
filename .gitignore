@@ -4,5 +4,4 @@
 *.aux
 *.pyc
 *.pid
-output
-cache
+.target
