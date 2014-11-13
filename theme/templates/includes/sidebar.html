@@ -59,7 +59,7 @@
                     {% for tag in tags %}
                         <li class="list-group-item tag-{{ tag.1 }}">
                             <a href="{{ SITEURL }}/{{ tag.0.url }}">
-                                {{ tag.0 }}
+                                <span class="label label-primary">{{ tag.0 }}</span>
                             </a>
                         </li>
                     {% endfor %}

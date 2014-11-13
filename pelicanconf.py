@@ -45,6 +45,14 @@ DISQUS_SITENAME='blogdeliverous'
 
 
 # Theme customisation
+LOCALE = ('fr_FR.utf8')
+DEFAULT_DATE_FORMAT = "%Y - %m - %d"
+#DATE_FORMATS = {
+#    'en': ('en_US','%a, %d %b %Y'),
+#}
+
+
+
 MENUITEMS = (('Deliverous', 'http://deliverous.com/'), ('L\'équipe', 'http://deliverous.com/#equipe'),)
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
@@ -53,7 +61,7 @@ DISPLAY_CATEGORIES_ON_SIDEBAR = True
 DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 
-DISPLAY_ARTICLE_INFO_ON_INDEX = False
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
 
 
 DISPLAY_BREADCRUMBS = False
@@ -64,7 +72,9 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
 #, 'markdown_checklist.extension'
 
 PLUGIN_PATH = "plugins"
-PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes", "thumbnailer", "sitemap"]
+PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes", "thumbnailer", "sitemap", "dateish"]
+
+DATEISH_PROPERTIES = ['modified']
 
 IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'images/thumbnails'
@@ -94,3 +104,5 @@ SITEMAP = {
 }
 
 GITHUB_USER='Deliverous'
+
+TAGS_URL ='tags.html'
