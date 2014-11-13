@@ -1,5 +1,5 @@
 blog:
-  image: registry.deliverous.net/deliverous/blog
+  image: deliverous/blog
   ports:
   - ip: 5.135.124.23
     container_port: 80
