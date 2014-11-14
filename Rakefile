@@ -7,7 +7,7 @@ task :pelican_html do
 end
 
 task :pelican_publish do
-  sh 'pelican', 'content', '-o', '.target/www', '-s', 'pelicanconf.py'
+  sh 'pelican', 'content', '-o', '.target/www', '-s', 'publishconf.py'
 end
 
 Rake::DockerLib.new("deliverous/blog") do
