@@ -71,10 +71,8 @@ ASCIIDOC_OPTIONS = []
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'admonition']
 #, 'markdown_checklist.extension'
 
-PLUGIN_PATH = "plugins"
-PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes", "thumbnailer", "sitemap", "dateish"]
-
-DATEISH_PROPERTIES = ['modified']
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["related_posts", "gzip_cache", "simple_footnotes", "thumbnailer", "sitemap"]
 
 IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'images/thumbnails'
