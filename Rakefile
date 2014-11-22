@@ -19,22 +19,24 @@ namespace :pelican do
     sh "cd #{output} && python -m pelican.server 8000 2>&1 &"
   end 
 
+  desc "Stop pelican development server"
   task :stop do
     sh "echo 'killall qui va bien à faire'"
   end 
 end
 
-Rake::DockerLib.new("deliverous/blog") do
-  sh "CGO_ENABLED=0 go build -a --ldflags '-s -extldflags \"-static\"' git.deliverous.com/deliverous/goserve.git/goserve"
+namespace :docker do
+  Rake::DockerLib.new("deliverous/blog") do
+    sh "CGO_ENABLED=0 go build -a --ldflags '-s -extldflags \"-static\"' git.deliverous.com/deliverous/goserve.git/goserve"
+  end
+
+  task :prepare => "pelican:publish"
+
+  task :run => ['docker:build', 'docker:stop'] do
+    sh "docker run --name blog -d -p 8000:80 deliverous/blog"
+  end
+
+  task :stop do
+    `docker stop blog ; docker rm blog`
+  end
 end
-
-task :prepare => "pelican:publish"
-
-task :run => [:build, :stop] do
-  sh "docker run --name blog -d -p 8000:80 deliverous/blog"
-end
-
-task :stop do
-  `docker stop blog ; docker rm blog`
-end
-
