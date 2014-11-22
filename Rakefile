@@ -6,12 +6,12 @@ output='.target/www'
 namespace :pelican do
   desc "Build html for local test"
   task :html do
-    sh 'pelican', 'content', '-o', output, '-s', 'pelicanconf.py'
+    sh 'pelican', 'content', '-o', output, '-s', 'pelicanconf.py', '--cache-path', '.target/cache'
   end
 
   desc "Build html for publish target"
   task :publish do
-    sh 'pelican', 'content', '-o', output, '-s', 'publishconf.py'
+    sh 'pelican', 'content', '-o', output, '-s', 'publishconf.py', '--cache-path', '.target/cache'
   end
 end
 
