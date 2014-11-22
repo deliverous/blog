@@ -13,6 +13,15 @@ namespace :pelican do
   task :publish do
     sh 'pelican', 'content', '-o', output, '-s', 'publishconf.py'
   end
+
+  desc "Start pelican development server"
+  task :start => "pelican:html" do
+    sh "cd #{output} && python -m pelican.server 8000 2>&1 &"
+  end 
+
+  task :stop do
+    sh "echo 'killall qui va bien à faire'"
+  end 
 end
 
 Rake::DockerLib.new("deliverous/blog") do
@@ -29,8 +38,3 @@ task :stop do
   `docker stop blog ; docker rm blog`
 end
 
-namespace :serve do
-  task :start => "pelican:html" do
-    sh "cd #{output} && python -m pelican.server 8000"
-  end 
-end
