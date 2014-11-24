@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 AUTHOR = u'Olivier Albiez et Thomas Clavier'
 SITENAME = u'Deliverous Blog'
@@ -104,3 +105,5 @@ SITEMAP = {
 GITHUB_USER='Deliverous'
 
 TAGS_URL ='tags.html'
+
+UPDATE_DATE = datetime.today()
