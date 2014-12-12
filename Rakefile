@@ -21,7 +21,7 @@ namespace :pelican do
 
   desc "Stop pelican development server"
   task :stop do
-    sh "echo 'killall qui va bien à faire'"
+    sh "pkill -f pelican.server"
   end 
 end
 
