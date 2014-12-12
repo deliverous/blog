@@ -1,5 +1,5 @@
 require 'rake/docker_lib'
-require 'rake/copy_if_obsolete'
+require 'rake/compile_go'
 
 output='.target/www'
 
@@ -17,7 +17,7 @@ namespace :pelican do
   desc "Start pelican development server"
   task :start => "pelican:html" do
     sh "cd #{output} && python -m pelican.server 8000 2>&1 &"
-  end 
+  end
 
   desc "Stop pelican development server"
   task :stop do
@@ -27,7 +27,14 @@ end
 
 namespace :docker do
   Rake::DockerLib.new("deliverous/blog") do
-    sh "CGO_ENABLED=0 go build -a --ldflags '-s -extldflags \"-static\"' git.deliverous.com/deliverous/goserve.git/goserve"
+    prepare do
+      Go::compilation(workspace: "#{Dir.pwd}/go", goversion: "1.3.3") do
+          package 'github.com/deliverous/goserve/goserve'
+          build 'github.com/deliverous/goserve/goserve', static: true
+          strip_binaries
+          copy_to Dir.pwd
+      end
+    end
   end
 
   task :prepare => "pelican:publish"
