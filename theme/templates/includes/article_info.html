@@ -1,34 +1,22 @@
-<footer class="post-info">
-    <span class="label label-info">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
-    </span>
-
+<div class="post-info">
+    Le
     {% if article.modified %}
-    <span class="label label-warning">Modified</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="{{ article.modified.isoformat() }}"> {{ article.modified.strftime(DEFAULT_DATE_FORMAT) }}</time>
+        <time datetime="{{ article.modified.isoformat() }}"> {{ article.modified.strftime("%d %B") }}</time>
+    </span>
+    {% else %}
+    <span class="published">
+        <time datetime="{{ article.date.isoformat() }}"> {{ article.date.strftime("%d %B") }}</time>
     </span>
     {% endif %}
 
     {% if article.author %}
-    <span class="label label-info">By</span>
-    <a href="{{ SITEURL }}/{{ article.author.url }}"><i class="fa fa-user"></i> {{ article.author }}</a>
+    par 
+    <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
     {% endif %}
 
-    <span class="pull-right">
-    {# <span class="label label-default"> #}
-    {# <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> #}
-    {# </span> #}
-
-    {% if PDF_PROCESSOR %}
-        <span class="label label-info">
-            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
-        </span>
-    {% endif %}
-
+    dans :
     {% include 'includes/taglist.html' %}
     {% import 'includes/translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
-    </span>
-</footer><!-- /.post-info -->
+</div><!-- /.post-info -->

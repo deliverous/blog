@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from datetime import datetime
 
 AUTHOR = u'Olivier Albiez et Thomas Clavier'
-SITENAME = u'Deliverous Blog'
+SITENAME = u'Blog Deliverous'
 SITEURL = 'http://blog.deliverous.com'
 THEME = './theme'
 
@@ -53,19 +53,22 @@ DEFAULT_DATE_FORMAT = "%Y - %m - %d"
 #}
 
 
+BOOTSTRAP_NAVBAR_INVERSE=True
 
-MENUITEMS = (('Deliverous', 'http://deliverous.com/'), ('L\'équipe', 'http://deliverous.com/#equipe'),)
+MENUITEMS = (('Deliverous', 'http://deliverous.com/'), ('<span class="fa fa-group"></span> Équipe', 'http://deliverous.com/team'),)
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 
+HIDE_SIDEBAR=True
 DISPLAY_CATEGORIES_ON_SIDEBAR = True
 DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 
-
 DISPLAY_BREADCRUMBS = False
+
+DEFAULT_PAGINATION = 12
 
 # Extensions
 ASCIIDOC_OPTIONS = []
@@ -79,7 +82,7 @@ IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'images/thumbnails'
 THUMBNAIL_SIZES = {
     '_icon': '75',
-    '_square': '150',
+    '_square': '720',
 #    'thumbnail_wide': '150x?',
 #    'thumbnail_tall': '?x150',
 }

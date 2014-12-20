@@ -1,8 +1,60 @@
 body {
-    padding-top: 70px;
-    background: url("../images/cloud.jpg") no-repeat center fixed;
-    background-size: cover;
-    font-size: 19px;
+  font-size: 14px;
+}
+
+.block1 {
+  background-color: #d3d7cf;
+  color: #2e3436;
+  border-top : solid 4px #888a85;
+  margin-top : 50px;
+}
+
+.index-info {
+  border-top : solid 1px #888a85;
+  background-color: #babdb6;
+  font-size: 12px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.article-info {
+  background-color: #babdb6;
+  font-size: 16px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin-top: 1em;
+}
+.subblock {
+  background-color: #babdb6;
+  color: #2e3436;
+}
+
+.subblock h2 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.summary {
+  padding: 1em;
+  text-align: justify;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  word-wrap: break-word;
+}
+
+.full-article {
+  font-size: 19px;
+}
+
+.entry-content {
+  text-align: justify;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  word-wrap: break-word;
 }
 
 #sidebar .list-group, #sidebar .list-group-item {
@@ -176,14 +228,6 @@ figure.floatcenter, .align-center {
 body > div.container {
   background-color: #fff;
   opacity: 0.8;
-}
-
-.icon-summary {
-  margin-right: 1em;
-}
-
-footer {
-    font-size: 0.5em;
 }
 
 .marge-left {
