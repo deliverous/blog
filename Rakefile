@@ -22,7 +22,7 @@ namespace :pelican do
   desc "Stop pelican development server"
   task :stop do
     sh "pkill -f pelican.server"
-  end 
+  end
 end
 
 namespace :docker do
