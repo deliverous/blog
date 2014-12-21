@@ -1,6 +1,6 @@
 {% if article.tags %}
 
 {% for tag in article.tags %}
-	<i class="fa fa-tags"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></i>
+	<a href="{{ SITEURL }}/{{ tag.url }}"><i class="fa fa-tags"></i> {{ tag }}</a>
 {% endfor %}
 {% endif %}
