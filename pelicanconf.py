@@ -7,6 +7,7 @@ AUTHOR = u'Olivier Albiez et Thomas Clavier'
 SITENAME = u'Blog Deliverous'
 SITEURL = 'http://blog.deliverous.com'
 THEME = './theme'
+FAVICON = 'images/favicon.png'
 
 # Pour avoir des urls reative en dev
 RELATIVE_URLS = True
@@ -20,7 +21,6 @@ PATH_METADATA = '(?P<category>[^/]*)'
 USE_FOLDER_AS_CATEGORY = False
 DELETE_OUTPUT_DIRECTORY = True
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-
 
 # Blogroll
 #LINKS =  (('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),
