@@ -6,7 +6,7 @@
       {% for article in (articles_page.object_list if articles_page else articles) %}
           <div class='col-md-4'>
             <article class='subblock'>
-                <a href="{{ SITEURL }}/{{ article.url }}"><img src="images/thumbnails/{{ article.slug }}__square.jpg" class="img-responsive"/></a>
+                <a href="{{ SITEURL }}/{{ article.url }}"><img src="/images/thumbnails/{{ article.slug }}__square.jpg" class="img-responsive"/></a>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 <div class="summary">
                     {{ article.summary }}
