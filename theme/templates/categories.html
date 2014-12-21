@@ -11,8 +11,8 @@
 {% endblock %}
 
 {% block content %}
+        <section id="categories" class="container">
     <div class="col-md-8 col-md-offset-2">
-        <section id="categories">
             <h1>All Categories for {{ SITENAME }}</h1>
             <div class="panel-group" id="accordion">
                 {% for category, articles in categories %}
@@ -32,6 +32,6 @@
                 </div>
                 {% endfor %}
             </div>
-        </section>
     </div>
+        </section>
 {% endblock %}

@@ -12,8 +12,8 @@
 {% endblock %}
 
 {% block content %}
-    <div class="col-md-8 col-md-offset-2">
-        <section id="tags">
+    <section id="tags" class="container">
+        <div class="col-md-8 col-md-offset-2">
             <h1>Tags for {{ SITENAME }}</h1>
             <div class="panel-group" id="accordion">
                 {%- for tag, articles in tags|sort %}
@@ -33,6 +33,6 @@
                 </div>
                 {% endfor %}
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 {% endblock %}
