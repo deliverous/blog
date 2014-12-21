@@ -15,8 +15,9 @@
     <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
     {% endif %}
 
-    dans :
+    <div class='flush-right'>
     {% include 'includes/taglist.html' %}
+    </div>
     {% import 'includes/translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
 </div><!-- /.post-info -->
