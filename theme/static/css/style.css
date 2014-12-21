@@ -2,6 +2,10 @@ body {
   font-size: 14px;
 }
 
+.panel-heading {
+    cursor: pointer;
+}
+
 .block1 {
   background-color: #d3d7cf;
   color: #2e3436;
@@ -68,7 +72,7 @@ body {
 }
 
 /* for list-group-items nested within a list-group-item, reset the bottom
-   padding of the last item, b/c the containing item has paddimg already 
+   padding of the last item, b/c the containing item has paddimg already
  */
 .list-group-item .list-group-item:last-child {
     padding-bottom: 0px;

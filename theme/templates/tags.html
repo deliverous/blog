@@ -18,7 +18,7 @@
             <div class="panel-group" id="accordion">
                 {%- for tag, articles in tags|sort %}
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{tag.slug}}">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{tag.slug}}"><i class="fa fa-tags"></i>{{ tag }}<span class="badge pull-right">{{ articles|count }}</span></a>
                         </h4>

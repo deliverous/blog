@@ -11,13 +11,13 @@
 {% endblock %}
 
 {% block content %}
-        <section id="categories" class="container">
-    <div class="col-md-8 col-md-offset-2">
+    <section id="categories" class="container">
+        <div class="col-md-8 col-md-offset-2">
             <h1>All Categories for {{ SITENAME }}</h1>
             <div class="panel-group" id="accordion">
                 {% for category, articles in categories %}
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{category.slug}}">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{category.slug}}"><i class="fa fa-folder-open"></i>{{ category }} <span class="badge pull-right">{{ articles|count }}</span></a>
                         </h4>
@@ -32,6 +32,6 @@
                 </div>
                 {% endfor %}
             </div>
-    </div>
-        </section>
+        </div>
+    </section>
 {% endblock %}
