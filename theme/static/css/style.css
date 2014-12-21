@@ -225,6 +225,10 @@ figure.floatcenter, .align-center {
     margin-right: 10px;
 }
 
+.archives-timestamp {
+    margin-right: 10px;
+}
+
 .tagcloud li {
     padding: 0px;
 }
