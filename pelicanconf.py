@@ -55,7 +55,15 @@ DEFAULT_DATE_FORMAT = "%Y - %m - %d"
 
 BOOTSTRAP_NAVBAR_INVERSE=True
 
-MENUITEMS = (('Deliverous', 'http://deliverous.com/'), ('<span class="fa fa-group"></span> Équipe', 'http://deliverous.com/team'),)
+MENUITEMS = (
+        ('<span class="fa fa-cloud"></span> Hébergement', 'http://deliverous.com/hebergement'),
+        ('<span class="fa fa-graduation-cap"></span> Service', 'http://deliverous.com/service'),
+        ('<span class="fa fa-group"></span> Équipe', 'http://deliverous.com/team'),
+        ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'), 
+        ('<i class="fa fa-twitter"></i> Twitter', 'https://twitter.com/DeliverousCom'),
+        ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),
+        ('<i class="fa fa-envelope"></i> Contact', 'mailto://contact@deliverous.com'),
+    )
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 
