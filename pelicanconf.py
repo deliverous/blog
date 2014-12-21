@@ -16,7 +16,8 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'fr'
 
 FILENAME_METADATA = '(?P<slug>(?P<date>\d{4}-\d{2}-\d{2})\..*)'
-USE_FOLDER_AS_CATEGORY = True
+PATH_METADATA = '(?P<category>[^/]*)'
+USE_FOLDER_AS_CATEGORY = False
 DELETE_OUTPUT_DIRECTORY = True
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
@@ -34,7 +35,7 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
 # Social widget
 SOCIAL = (
-          ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'), 
+          ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'),
           ('<i class="fa fa-twitter"></i> Twitter', 'https://twitter.com/DeliverousCom'),
           ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),
           ('<i class="fa fa-envelope"></i> Contact', 'mailto://contact@deliverous.com'),
@@ -59,7 +60,7 @@ MENUITEMS = (
         ('<span class="fa fa-cloud"></span> Hébergement', 'http://deliverous.com/hebergement'),
         ('<span class="fa fa-graduation-cap"></span> Service', 'http://deliverous.com/service'),
         ('<span class="fa fa-group"></span> Équipe', 'http://deliverous.com/team'),
-        ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'), 
+        ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'),
         ('<i class="fa fa-twitter"></i> Twitter', 'https://twitter.com/DeliverousCom'),
         ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),
         ('<i class="fa fa-envelope"></i> Contact', 'mailto://contact@deliverous.com'),
