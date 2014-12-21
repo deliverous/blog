@@ -64,8 +64,8 @@ MENUITEMS = (
         ('<i class="fa fa-twitter"></i> Twitter', 'https://twitter.com/DeliverousCom'),
         ('<i class="fa fa-envelope"></i> Contact', 'mailto://contact@deliverous.com'),
         ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),
-        ('<i class="fa fa-tag"></i> Tags', 'tags.html'),
-        ('<i class="fa fa-folder-open"></i> Categories', 'categories.html'),
+        ('<i class="fa fa-tag"></i> Tags', '/tags.html'),
+        ('<i class="fa fa-folder-open"></i> Categories', '/categories.html'),
     )
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
