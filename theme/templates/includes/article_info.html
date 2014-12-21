@@ -11,9 +11,13 @@
     {% endif %}
 
     {% if article.author %}
-    par 
+    par
     <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
     {% endif %}
+
+    <span class="pull-right">
+        <i class="fa fa-folder-open">{{ article.category }}</i>
+    </span>
 
     <div>
     {% include 'includes/taglist.html' %}
