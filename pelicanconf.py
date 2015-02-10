@@ -38,7 +38,7 @@ SOCIAL = (
           ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'),
           ('<i class="fa fa-twitter"></i> Twitter', 'https://twitter.com/DeliverousCom'),
           ('<i class="fa fa-rss"></i> RSS', 'http://blog.deliverous.com/feeds/all.atom.xml'),
-          ('<i class="fa fa-envelope"></i> Contact', 'mailto://contact@deliverous.com'),
+          ('<i class="fa fa-envelope"></i> Contact', 'mailto:contact@deliverous.com'),
           ('<i class="fa fa-envelope"></i> Mailing list Deliverous', 'http://ml.deliverous.com/mailman/listinfo/deliverous'),
          )
 
