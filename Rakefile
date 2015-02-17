@@ -3,19 +3,24 @@ require 'rake/compile_go'
 
 output='.target/www'
 
+def pelican_generate(configuration, options={})
+  sh "pelican content -o .target/www -s #{configuration} --cache-path .target/cache"
+end
+
 namespace :pelican do
   desc "Build html for local test"
   task :html do
-    sh 'pelican', 'content', '-o', output, '-s', 'pelicanconf.py', '--cache-path', '.target/cache'
+    pelican_generate 'pelicanconf.py' 
   end
 
   desc "Build html for publish target"
   task :publish do
-    sh 'pelican', 'content', '-o', output, '-s', 'publishconf.py', '--cache-path', '.target/cache'
+    pelican_generate 'publishconf.py' 
   end
 
   desc "Start pelican development server"
-  task :start => "pelican:html" do
+  task :start do
+    sh "pelican --debug --autoreload #{content} -o #{output} -s pelicanconf.py --cache-path .target/cache 2>&1 &"
     sh "cd #{output} && python -m pelican.server 8000 2>&1 &"
   end
 
