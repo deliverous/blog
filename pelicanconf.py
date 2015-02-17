@@ -43,7 +43,7 @@ SOCIAL = (
          )
 
 
-DISQUS_SITENAME='blogdeliverous'
+DISQUS_SITENAME = 'blogdeliverous'
 
 
 # Theme customisation
@@ -54,7 +54,7 @@ DEFAULT_DATE_FORMAT = "%Y - %m - %d"
 #}
 
 
-BOOTSTRAP_NAVBAR_INVERSE=True
+BOOTSTRAP_NAVBAR_INVERSE = True
 
 MENUITEMS = (
         ('<span class="fa fa-cloud"></span> Hébergement', 'http://deliverous.com/hebergement'),
@@ -70,7 +70,7 @@ MENUITEMS = (
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 
-HIDE_SIDEBAR=True
+HIDE_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_SIDEBAR = True
 DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
@@ -117,8 +117,8 @@ SITEMAP = {
     }
 }
 
-GITHUB_USER='Deliverous'
+GITHUB_USER = 'Deliverous'
 
-TAGS_URL ='tags.html'
+TAGS_URL = 'tags.html'
 
 UPDATE_DATE = datetime.today()
