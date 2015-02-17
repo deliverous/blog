@@ -245,3 +245,9 @@ body > div.container {
 .marge-right {
   margin-right: 1em;
 }
+
+code {
+  color: inherit;
+  background-color: inherit;
+  padding: inherit;
+}
