@@ -1,11 +1,12 @@
 require 'rake/docker_lib'
 require 'rake/compile_go'
 
-output='.target/www'
+Output = '.target/www'
 
 def pelican_generate(configuration, options={})
-  command = "pelican content -o #{output} -s #{configuration} --cache-path .target/cache"
-  command += " --debug --autoreload 2>&1 &" if options.has_key? :autoreload
+  command = "pelican content -o #{Output} -s #{configuration} --cache-path .target/cache"
+  command += " --debug" if options.fetch(:debug, false)
+  command += " --autoreload 2>&1 &" if options.fetch(:autoreload, false)
   sh command
 end
 
@@ -22,8 +23,8 @@ namespace :pelican do
 
   desc "Start pelican development server"
   task :start do
-    pelican_generate 'publishconf.py', autoreload: true
-    cd output do
+    pelican_generate('publishconf.py', autoreload: true, debug: ENV.has_key?('DEBUG'))
+    cd Output do
       sh "python -m pelican.server 8000 2>&1 &"
     end
   end
