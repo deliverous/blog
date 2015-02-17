@@ -93,7 +93,8 @@ IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'images/thumbnails'
 THUMBNAIL_SIZES = {
     '_icon': '75',
-    '_square': '720',
+    '_square': '360',
+    '_wide': '750x?',
 #    'thumbnail_wide': '150x?',
 #    'thumbnail_tall': '?x150',
 }
