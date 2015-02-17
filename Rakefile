@@ -4,7 +4,9 @@ require 'rake/compile_go'
 output='.target/www'
 
 def pelican_generate(configuration, options={})
-  sh "pelican content -o .target/www -s #{configuration} --cache-path .target/cache"
+  command = "pelican content -o .target/www -s #{configuration} --cache-path .target/cache"
+  command += " --debug --autoreload 2>&1 &" if options.has_key? :autoreload 
+  sh command
 end
 
 namespace :pelican do
@@ -20,7 +22,7 @@ namespace :pelican do
 
   desc "Start pelican development server"
   task :start do
-    sh "pelican --debug --autoreload #{content} -o #{output} -s pelicanconf.py --cache-path .target/cache 2>&1 &"
+    pelican_generate 'publishconf.py', autoreload: true
     sh "cd #{output} && python -m pelican.server 8000 2>&1 &"
   end
 
