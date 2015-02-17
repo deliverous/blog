@@ -4,31 +4,33 @@ require 'rake/compile_go'
 output='.target/www'
 
 def pelican_generate(configuration, options={})
-  command = "pelican content -o .target/www -s #{configuration} --cache-path .target/cache"
-  command += " --debug --autoreload 2>&1 &" if options.has_key? :autoreload 
+  command = "pelican content -o #{output} -s #{configuration} --cache-path .target/cache"
+  command += " --debug --autoreload 2>&1 &" if options.has_key? :autoreload
   sh command
 end
 
 namespace :pelican do
   desc "Build html for local test"
   task :html do
-    pelican_generate 'pelicanconf.py' 
+    pelican_generate 'pelicanconf.py'
   end
 
   desc "Build html for publish target"
   task :publish do
-    pelican_generate 'publishconf.py' 
+    pelican_generate 'publishconf.py'
   end
 
   desc "Start pelican development server"
   task :start do
     pelican_generate 'publishconf.py', autoreload: true
-    sh "cd #{output} && python -m pelican.server 8000 2>&1 &"
+    cd output do
+      sh "python -m pelican.server 8000 2>&1 &"
+    end
   end
 
   desc "Stop pelican development server"
   task :stop do
-    sh "pkill -f pelican.server"
+    sh "pkill -f pelican"
   end
 end
 
