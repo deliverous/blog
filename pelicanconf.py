@@ -122,3 +122,5 @@ GITHUB_USER = 'Deliverous'
 TAGS_URL = 'tags.html'
 
 UPDATE_DATE = datetime.today()
+
+PYGMENTS_STYLE = 'monokai'
