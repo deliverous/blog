@@ -10,10 +10,13 @@
     </span>
     {% endif %}
 
-    {% if article.author %}
-    par
-    <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+    {% if article.authors %}
+       par 
+       {% for author in article.authors %}
+         <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
+       {% endfor %}
     {% endif %}
+
 
     <span class="pull-right">
         <a href="{{ SITEURL }}/{{ article.category.url }}"><i class="fa fa-folder-open"></i> {{ article.category }}</a>
