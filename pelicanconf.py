@@ -57,7 +57,7 @@ DEFAULT_DATE_FORMAT = "%Y - %m - %d"
 BOOTSTRAP_NAVBAR_INVERSE = True
 
 MENUITEMS = (
-        ('<span class="fa fa-cloud"></span> Hébergement', 'http://deliverous.com/hebergement'),
+        ('<span class="fa fa-cloud"></span> Hébergement', 'http://deliverous.com/hosting'),
         ('<span class="fa fa-graduation-cap"></span> Service', 'http://deliverous.com/service'),
         ('<span class="fa fa-group"></span> Équipe', 'http://deliverous.com/team'),
         ('<i class="fa fa-github"></i> GitHub', 'https://github.com/Deliverous'),
