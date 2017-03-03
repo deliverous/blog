@@ -1,6 +1,0 @@
-blog:
-  image: deliverous/blog
-  ports:
-  - ip: 5.135.124.23
-    container_port: 80
-    host_port: 80
