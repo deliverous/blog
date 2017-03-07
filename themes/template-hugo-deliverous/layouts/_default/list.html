@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ partial "header" . }}
+    <div class="container">
+      <div class="row">
+        {{ $paginator := $.Paginator }}
+        {{ range .Paginator.Pages }}
+        <div class='col-md-4'>
+          <article class='subblock'>
+            <a href="{{ .Site.BaseURL }}/{{ .Permalink }}"><img src="/images/thumbnails/__square.jpg" class="img-responsive"/></a>
+
+            <h2><a href="{{ .Site.BaseURL }}/{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="summary">
+              {{ .Summary }}
+            </div>
+
+
+          </article>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
