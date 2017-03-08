@@ -8,16 +8,22 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="{{ .Site.BaseURL }}/" class="navbar-brand">
-                {% if .Site.Params.logo %}<img src="{{ .Site.BaseURL }}/{{ .Site.Params.logo }}" width="{{ .Site.Params.logo_SIZE }}"/> {% endif %}
                 <span class="fa fa-rss"></span>
+                Blog
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                {% for title, link in MENUITEMS %}
-                    <li><a href="">{{ title }}</a></li>
-                {% endfor %}
-            </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="http://deliverous.com/hosting"><span class="fa fa-cloud"></span> Hébergement</a></li>
+            <li><a href="http://deliverous.com/service"><span class="fa fa-graduation-cap"></span> Service</a></li>
+            <li><a href="http://deliverous.com/team"><span class="fa fa-group"></span> Équipe</a></li>
+            <li><a href="https://github.com/Deliverous"><i class="fa fa-github"></i> GitHub</a></li>
+            <li><a href="https://twitter.com/DeliverousCom"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="mailto://contact@deliverous.com"><i class="fa fa-envelope"></i> Contact</a></li>
+            <li><a href="http://blog.deliverous.com/feeds/all.atom.xml"><i class="fa fa-rss"></i> RSS</a></li>
+            <li><a href="/tags.html"><i class="fa fa-tag"></i> Tags</a></li>
+            <li><a href="/categories.html"><i class="fa fa-folder-open"></i> Categories</a></li>
+          </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
