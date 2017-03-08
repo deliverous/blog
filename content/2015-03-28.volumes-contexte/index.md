@@ -1,12 +1,13 @@
 +++
 title = "Vous avez dit contextes ?"
 Tags = ["docker", "volume", "deliverous", "uploads"]
-Authors = Thomas Clavier
-Summary = Quelles sont les bonnes pratiques avec les volumes ? Suite de la série sur les volumes avec la création de contextes.
+Authors = ["Thomas Clavier"]
 +++
 
 Dans cet article, le second de la série sur les volumes, je vais aborder un nouvel usage des volumes, la création de contextes séparés.
 En effet, avoir un nom de répertoire différent entre l'intérieur et l'extérieur du conteneur peut apporter un certain nombre d'avantages.
+
+<!--more-->
 
 # Séparation de logs
 
