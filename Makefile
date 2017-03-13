@@ -2,7 +2,7 @@ JPEG_ORIGINAL = $(shell find content/ -type f -name '*.jpg' ! -name '*__thumbnai
 JPEG_SQUARE = $(patsubst %.jpg, %__thumbnail-square.jpg, $(JPEG_ORIGINAL))
 
 %__thumbnail-square.jpg: %.jpg
-	convert  -resize 360x360^ -crop 360x360 -gravity center "$<" "$@"
+	convert  -geometry 360x360^ -gravity center -crop 360x360+0+0 "$<" "$@"
 
 jpeg: $(JPEG_SQUARE)
 
