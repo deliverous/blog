@@ -8,3 +8,6 @@ jpeg: $(JPEG_SQUARE)
 
 clean:
 	rm -rf ${JPEG_SQUARE}
+
+run:
+	hugo server --buildDrafts -w
