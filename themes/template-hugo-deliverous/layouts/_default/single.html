@@ -11,7 +11,7 @@
           <div class="col-md-8">
             <img src="{{ .Permalink }}/illustration__thumbnail-wide.jpg" class="article-illustration"/>
             <div class="article-info">
-              <!--{% include "includes/article_info.html" %}-->
+               {{ partial "article-info" . }}
             </div>
             <section id="content">
                 <article class="full-article">
