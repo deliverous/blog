@@ -15,10 +15,6 @@ def list_items(kind):
                 yield f
 
 
-def list_articles():
-    return list_items('articles')
-
-
 def nameof(filename):
     return os.path.splitext(filename)[0]
 
@@ -90,16 +86,22 @@ def translate_article(content, **kwargs):
             lines.append(line)
     return string.join(lines, '\n')
 
-for article in list_articles():
-    name = nameof(article)
-    date = name[0:10]
-    target = os.path.join(TARGET, 'articles', name.replace('.', '_'))
-    ensure_directory(target)
-    write_article(
-        os.path.join(target, 'index.md'),
-        translate_article(
-            read_article(os.path.join(BASE, 'articles', article)),
-            date=date,
-            aliases='/'+name+'.html')
-    )
-    copy_illustration(name, os.path.join(target, 'illustration'))
+
+def translate_category(kind):
+    for article in list_items(kind):
+        name = nameof(article)
+        date = name[0:10]
+        target = os.path.join(TARGET, kind, name.replace('.', '_'))
+        ensure_directory(target)
+        write_article(
+            os.path.join(target, 'index.md'),
+            translate_article(
+                read_article(os.path.join(BASE, kind, article)),
+                date=date,
+                aliases='/'+name+'.html')
+        )
+        copy_illustration(name, os.path.join(target, 'illustration'))
+
+
+translate_category('articles')
+translate_category('news')
