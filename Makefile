@@ -8,6 +8,7 @@ jpeg: $(JPEG_SQUARE)
 
 clean:
 	rm -rf ${JPEG_SQUARE}
+	find . -name '*thumbnail*' -delete
 
 run:
 	hugo server --buildDrafts -w
