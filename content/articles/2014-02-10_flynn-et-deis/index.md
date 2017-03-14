@@ -8,6 +8,7 @@ authors:
   - Olivier Albiez
 description: Rapide comparaison de flynn.io et de deis.io
 date: 2014-02-10
+publishdate: 2014-02-10
 aliases: /2014-02-10.flynn-et-deis.html
 ---
 

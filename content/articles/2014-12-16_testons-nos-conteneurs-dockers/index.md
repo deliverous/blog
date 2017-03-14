@@ -8,6 +8,7 @@ authors:
   - Olivier Albiez
 description: Vous aussi vous êtes adepte du test driven developpement ? Alors voici comment nous faisions pour construire nos conteneurs Docker depuis les tests.
 date: 2014-12-16
+publishdate: 2014-12-16
 aliases: /2014-12-16.testons-nos-conteneurs-dockers.html
 ---
 

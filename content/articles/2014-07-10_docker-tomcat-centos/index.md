@@ -8,6 +8,7 @@ authors:
   - Thomas Clavier
 description: Confronté au problème de l'installation d'une plate-forme Docker sous Red Hat pour un client, voici les détails d'une installation réussie.
 date: 2014-07-10
+publishdate: 2014-07-10
 aliases: /2014-07-10.docker-tomcat-centos.html
 ---
 

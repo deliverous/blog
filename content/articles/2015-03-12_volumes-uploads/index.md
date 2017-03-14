@@ -9,6 +9,7 @@ authors:
   - Thomas Clavier
 description: Quelles sont les bonnes pratiques avec les volumes ? C'est une question récurrente que ce soit dans les conférences que nous donnons, dans les meetups ou de la part de nos clients.
 date: 2015-03-12
+publishdate: 2015-03-12
 aliases: /2015-03-12.volumes-uploads.html
 ---
 

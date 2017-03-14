@@ -7,6 +7,7 @@ authors:
   - Thomas Clavier
 description: Pour la mise en place de notre solution de déploiement continu, nous avons commencé à étudier tout un ensemble d'outils pour assurer l'hébergement dans le nuage des différentes applications à déployer. Suite aux résultat de nos recherches, nous avons décidé de devenir notre propre hébergeur.
 date: 2014-04-07
+publishdate: 2014-04-07
 aliases: /2014-04-07.hebergeur-docker.html
 ---
 

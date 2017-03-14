@@ -7,6 +7,7 @@ authors:
   - Thomas Clavier
 description: Le prochain Docker meetup Parisien aurra lieu le mardi 19 juillet.
 date: 2016-07-19
+publishdate: 2016-07-19
 aliases: /2016-07-19.mega_meetup_parisien.html
 ---
 

@@ -8,6 +8,7 @@ authors:
   - Olivier Albiez
 description: Documentation du fichier Deliverous
 date: 2015-06-16
+publishdate: 2015-06-16
 aliases: /2015-06-16.fichier-deliverous.html
 ---
 

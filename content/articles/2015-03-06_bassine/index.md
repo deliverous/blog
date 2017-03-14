@@ -9,6 +9,7 @@ authors:
   - Etienne Charignon
 description: Comment utiliser un conteneur Docker pour faire un espace de travail collaboratif.
 date: 2015-03-06
+publishdate: 2015-03-06
 aliases: /2015-03-06.bassine.html
 ---
 

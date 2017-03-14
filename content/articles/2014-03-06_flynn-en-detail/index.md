@@ -8,6 +8,7 @@ authors:
   - Olivier Albiez
 description: Première plongé dans le code de *Fynn.io* pour bien comprendre son fonctionnement. Retour de cette expérience très enrichissante.
 date: 2014-03-06
+publishdate: 2014-03-06
 aliases: /2014-03-06.flynn-en-detail.html
 ---
 

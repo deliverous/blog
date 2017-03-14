@@ -56,6 +56,8 @@ def translate_front_matter(line):
         if 'draft' in line:
             return ['draft: true']
         return []
+    elif line.startswith('Modified:'):
+        return ['lastmod: ' + line[10:]]
     return [line]
 
 
@@ -98,6 +100,7 @@ def translate_category(kind):
             translate_article(
                 read_article(os.path.join(BASE, kind, article)),
                 date=date,
+                publishdate=date,
                 aliases='/'+name+'.html')
         )
         copy_illustration(name, os.path.join(target, 'illustration'))

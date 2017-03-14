@@ -7,6 +7,7 @@ authors:
   - Olivier Albiez
 description: Retour sur deux jours d'échanges et d'apprentissage au salon Solution Linux 2014.
 date: 2014-05-27
+publishdate: 2014-05-27
 aliases: /2014-05-27.salon-solution-linux.html
 ---
 

@@ -7,6 +7,7 @@ authors:
   - Thomas Clavier
 description: Assuré par David Gageot et Nicolas De Loof, le ch'tijug organisait mercredi soir une conférence sur Docker et le Cloud Google. C'est avec grand plaisir que j'ai suivi cette session.
 date: 2014-06-13
+publishdate: 2014-06-13
 aliases: /2014-06-13.chtijug-docker-google.html
 ---
 

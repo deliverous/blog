@@ -9,6 +9,7 @@ authors:
 description: Quelles sont les bonnes pratiques avec les volumes ? Suite et fin de la série sur les volumes.
 draft: true
 date: 2015-04-02
+publishdate: 2015-04-02
 aliases: /2015-04-02.volumes-users.html
 ---
 

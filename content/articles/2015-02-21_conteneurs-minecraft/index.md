@@ -12,6 +12,7 @@ authors:
 description: Il était une fois, des enfants, un conteneur Minecraft et du javascript ...
 draft: true
 date: 2015-02-21
+publishdate: 2015-02-21
 aliases: /2015-02-21.conteneurs-minecraft.html
 ---
 

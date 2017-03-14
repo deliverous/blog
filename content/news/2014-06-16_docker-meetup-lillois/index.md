@@ -6,6 +6,7 @@ authors:
   - Thomas Clavier
 description: Nous organisons le premier Docker meetup Lillois jeudi 19 juin au café Morel et fils à Lille.
 date: 2014-06-16
+publishdate: 2014-06-16
 aliases: /2014-06-16.docker-meetup-lillois.html
 ---
 

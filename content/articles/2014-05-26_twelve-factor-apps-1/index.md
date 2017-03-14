@@ -8,6 +8,7 @@ authors:
   - Olivier Albiez
 description: Etude de *The Twelve Factor Apps*. La théorisation d'une bonne application par Adam Wiggins l'un des fondateurs de [Heroku](https://www.heroku.com/)
 date: 2014-05-26
+publishdate: 2014-05-26
 aliases: /2014-05-26.twelve-factor-apps-1.html
 ---
 

@@ -11,6 +11,7 @@ authors:
 description: Lxc et OpenVZ sont ils des conteneurs applicatif ?
 draft: true
 date: 2015-02-21
+publishdate: 2015-02-21
 aliases: /2015-02-21.conteneurs-applicatifs.html
 ---
 

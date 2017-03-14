@@ -6,6 +6,7 @@ authors:
   - Thomas Clavier
 description: Après avoir recueilli l'avis de beaucoup de personnes voici comment nous imaginons l'usage de deliverous
 date: 2014-02-19
+publishdate: 2014-02-19
 aliases: /2014-02-19.approche-utilisateur.html
 ---
 

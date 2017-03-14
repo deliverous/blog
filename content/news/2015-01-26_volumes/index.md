@@ -8,6 +8,7 @@ authors:
   - Thomas Clavier
 description: Vous étiez nombreux à le demander voici enfin les volumes ouverts à tout le monde sur Deliverous.
 date: 2015-01-26
+publishdate: 2015-01-26
 aliases: /2015-01-26.volumes.html
 ---
 

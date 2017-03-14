@@ -9,6 +9,7 @@ authors:
   - Thomas Clavier
 description: Quelles sont les bonnes pratiques avec les volumes ? Suite de la série sur les volumes avec la création de contextes.
 date: 2015-03-28
+publishdate: 2015-03-28
 aliases: /2015-03-28.volumes-contexte.html
 ---
 

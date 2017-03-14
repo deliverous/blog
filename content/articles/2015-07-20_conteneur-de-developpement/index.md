@@ -9,6 +9,7 @@ authors:
 description: Comment utiliser le même conteneur dans tous les environements sans avoir à reconstruire le conteneur à chaque modification de sources ?
 draft: true
 date: 2015-07-20
+publishdate: 2015-07-20
 aliases: /2015-07-20.conteneur-de-developpement.html
 ---
 

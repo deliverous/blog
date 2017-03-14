@@ -7,6 +7,7 @@ authors:
   - Thomas Clavier
 description: Le prochain Docker meetup Lillois aurra lieu le mercredi 18 février.
 date: 2015-02-10
+publishdate: 2015-02-10
 aliases: /2015-02-10.4ieme-docker-meetup-lillois.html
 ---
 

@@ -8,8 +8,9 @@ authors:
   - Thomas Clavier
   - Olivier Albiez
 description: Confronté à un problème de construction de container *Tomcat*, voici quelques pistes pour bien commencer.
-Modified: 2014-11-13
+lastmod: 2014-11-13
 date: 2014-08-08
+publishdate: 2014-08-08
 aliases: /2014-08-08.docker-tomcat.html
 ---
 

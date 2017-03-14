@@ -7,6 +7,7 @@ authors:
   - Olivier Albiez
 description: Brève description de ce que nous avons mis en place pour vous ouvrir la béta de *Deliverous*
 date: 2014-07-29
+publishdate: 2014-07-29
 aliases: /2014-07-29.ouverture-de-la-beta.html
 ---
 

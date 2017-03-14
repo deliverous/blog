@@ -6,6 +6,7 @@ authors:
   - Thomas Clavier
 description: Après avoir regarder comment installer [Docker sur des Red Hat et des CentOS](2014-07-10.docker-tomcat-centos.html), nous attaquons le domaine de l'organisation des équipes autour de *Docker*.
 date: 2014-07-31
+publishdate: 2014-07-31
 aliases: /2014-07-31.retour-experience-docker-en-entreprise.html
 ---
 

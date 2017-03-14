@@ -8,6 +8,7 @@ authors:
 description: Les difficultés téchniques que l'on a rencontré dans la mise au point de Déliverous
 draft: true
 date: 2014-07-14
+publishdate: 2014-07-14
 aliases: /2014-07-14.points-chauds.html
 ---
 

@@ -8,6 +8,7 @@ authors:
   - Olivier Albiez
 description: Après avoir étudié Flynn.io, nous nous sommes intéressé à *CoreOS*. Voici quelques mots sur nos découverte de cet outils de plus en plus populaire.
 date: 2014-03-08
+publishdate: 2014-03-08
 aliases: /2014-03-08.coreos.html
 ---
 
