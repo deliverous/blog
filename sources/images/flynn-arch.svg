@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="937.29022"
+   height="483.01352"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="flynn-arch.svg"
+   inkscape:export-filename="/home/tom/tmp/deliverous-blog/content/images/flynn-arch.png"
+   inkscape:export-xdpi="98"
+   inkscape:export-ydpi="98">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4315">
+      <stop
+         style="stop-color:#729fcf;stop-opacity:1;"
+         offset="0"
+         id="stop4317" />
+      <stop
+         style="stop-color:#729fcf;stop-opacity:0;"
+         offset="1"
+         id="stop4319" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3874"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4315"
+       id="linearGradient4321"
+       x1="187.14285"
+       y1="109.50503"
+       x2="195.71426"
+       y2="392.36218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73076922,0,0,1,3.0769227,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4315-9"
+       id="linearGradient4321-6"
+       x1="187.14285"
+       y1="109.50503"
+       x2="195.71426"
+       y2="392.36218"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4315-9">
+      <stop
+         style="stop-color:#729fcf;stop-opacity:1;"
+         offset="0"
+         id="stop4317-2" />
+      <stop
+         style="stop-color:#729fcf;stop-opacity:0;"
+         offset="1"
+         id="stop4319-5" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(385.7143,2.8571498)"
+       y2="392.36218"
+       x2="195.71426"
+       y1="109.50503"
+       x1="187.14285"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4338-3"
+       xlink:href="#linearGradient4315-9-3"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4315-9-3">
+      <stop
+         style="stop-color:#729fcf;stop-opacity:1;"
+         offset="0"
+         id="stop4317-2-6" />
+      <stop
+         style="stop-color:#729fcf;stop-opacity:0;"
+         offset="1"
+         id="stop4319-5-8" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4315-8"
+       id="linearGradient4321-0"
+       x1="187.14285"
+       y1="109.50503"
+       x2="195.71426"
+       y2="392.36218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73076922,0,0,1,3.0769227,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4315-8">
+      <stop
+         style="stop-color:#729fcf;stop-opacity:1;"
+         offset="0"
+         id="stop4317-8" />
+      <stop
+         style="stop-color:#729fcf;stop-opacity:0;"
+         offset="1"
+         id="stop4319-8" />
+    </linearGradient>
+    <linearGradient
+       y2="392.36218"
+       x2="195.71426"
+       y1="109.50503"
+       x1="187.14285"
+       gradientTransform="matrix(0.73076922,0,0,1,300.57467,0.71880714)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3061"
+       xlink:href="#linearGradient4315-8"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4315-5"
+       id="linearGradient4321-06"
+       x1="187.14285"
+       y1="109.50503"
+       x2="195.71426"
+       y2="392.36218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73076922,0,0,1,3.0769227,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4315-5">
+      <stop
+         style="stop-color:#729fcf;stop-opacity:1;"
+         offset="0"
+         id="stop4317-4" />
+      <stop
+         style="stop-color:#729fcf;stop-opacity:0;"
+         offset="1"
+         id="stop4319-7" />
+    </linearGradient>
+    <linearGradient
+       y2="392.36218"
+       x2="195.71426"
+       y1="109.50503"
+       x1="187.14285"
+       gradientTransform="matrix(0.73076922,0,0,1,598.07243,0.71880571)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3061-8"
+       xlink:href="#linearGradient4315-5"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="360.05305"
+     inkscape:cy="156.55805"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     units="cm"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     inkscape:window-x="0"
+     inkscape:window-y="19"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(24.004501,15.928032)">
+    <rect
+       style="fill:url(#linearGradient3061-8);fill-opacity:1;stroke:none"
+       id="rect2985-7"
+       width="271.42856"
+       height="411.42856"
+       x="606.42407"
+       y="20.223852"
+       rx="3.3399637"
+       ry="4.2709846" />
+    <rect
+       style="fill:url(#linearGradient3061);fill-opacity:1;stroke:none"
+       id="rect2985-0"
+       width="271.42856"
+       height="411.42856"
+       x="308.92633"
+       y="20.22385"
+       rx="3.3399637"
+       ry="4.2709846" />
+    <rect
+       style="fill:url(#linearGradient4321);fill-opacity:1;stroke:none"
+       id="rect2985"
+       width="271.42856"
+       height="411.42856"
+       x="11.42857"
+       y="19.505039"
+       rx="3.3399637"
+       ry="4.2709846" />
+    <rect
+       style="fill:#8ae234;fill-opacity:1;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3081"
+       width="254.28572"
+       height="38.57143"
+       x="19.999989"
+       y="64.010483"
+       rx="6.7814388"
+       ry="4.2448273" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="43.417263"
+       y="88.076469"
+       id="text2991"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2993"
+         x="43.417263"
+         y="88.076469">Host Service (Flynn-host)</tspan></text>
+    <rect
+       style="fill:#ad7fa8;fill-opacity:1;stroke:#5c3566;stroke-width:1.74227726;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3025"
+       width="318.65649"
+       height="39.154194"
+       x="549.2431"
+       y="117.9435"
+       rx="1.523899"
+       ry="2.0536644" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="691.66217"
+       y="144.36142"
+       id="text3027"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3029"
+         x="691.66217"
+         y="144.36142">etcd</tspan></text>
+    <rect
+       style="fill:#ad7fa8;fill-opacity:1;stroke:#5c3566;stroke-width:1.59996021;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3031"
+       width="238.7896"
+       height="39.335068"
+       x="283.46237"
+       y="117.85307"
+       rx="1.1540294"
+       ry="2.3519924" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="363.75073"
+       y="144.36142"
+       id="text3033"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3035"
+         x="363.75073"
+         y="144.36142">discoverd</tspan></text>
+    <rect
+       style="fill:#729fcf;fill-opacity:1;stroke:#204a87;stroke-width:1.89522684;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3037"
+       width="513.70386"
+       height="39.346741"
+       x="353.86234"
+       y="172.07161"
+       rx="2.7120628"
+       ry="2.5572727" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="494.64005"
+       y="196.62781"
+       id="text3039"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3041"
+         x="494.64005"
+         y="196.62781">Controller  (flynn-controller)</tspan></text>
+    <rect
+       style="fill:#729fcf;fill-opacity:1;stroke:#204a87;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3051"
+       width="351.93454"
+       height="39.00597"
+       x="268.60416"
+       y="226.4664"
+       rx="4.5770569"
+       ry="2.3799129" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="300.61145"
+       y="250.74966"
+       id="text3053"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3055"
+         x="300.61145"
+         y="250.74966">Router HTTP (strowger / HAproxy)</tspan></text>
+    <rect
+       style="fill:#729fcf;fill-opacity:1;stroke:#204a87;stroke-width:2.4290483;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3057"
+       width="253.85095"
+       height="38.256603"
+       x="82.217377"
+       y="172.61668"
+       rx="10.151923"
+       ry="2.3341908" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="116.29617"
+       y="196.65709"
+       id="text3059"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="116.29617"
+         y="196.65709"
+         id="tspan3063">Http file service (shelf)</tspan></text>
+    <rect
+       style="fill:#fcaf3e;fill-opacity:1;stroke:#ce5c00;stroke-width:1.9302628;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3065"
+       width="254.34973"
+       height="39.25869"
+       x="317.46576"
+       y="276.91147"
+       rx="6.3214655"
+       ry="1.8226944" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="414.4502"
+       y="303.38162"
+       id="text3067"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3069"
+         x="414.4502"
+         y="303.38162">Builder</tspan></text>
+    <rect
+       style="fill:#fcaf3e;fill-opacity:1;stroke:#ce5c00;stroke-width:1.99874747;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3071"
+       width="254.28125"
+       height="39.109455"
+       x="20.002224"
+       y="276.98608"
+       rx="7.78758"
+       ry="1.7878311" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="120.21358"
+       y="302.991"
+       id="text3073"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3075"
+         x="120.21358"
+         y="302.991">Runner</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 523.68779,211.41835 c -96.7712,21.8322 -264.9537,24.87195 -290.04329,65.56773"
+       id="path3077"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3037"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect3071"
+       inkscape:connection-end-point="d4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 147.14285,276.98608 c -219.892776,-94.28148 -29.45784,-121.11183 0,-174.40417"
+       id="path3087"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3071"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect3081"
+       inkscape:connection-end-point="d4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 400.52945,276.91147 C 349.79179,255.171 254.90905,242.89019 252.12808,210.87329"
+       id="path3089"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3065"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect3057"
+       inkscape:connection-end-point="d4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 197.82604,210.87329 -39.11409,66.11279"
+       id="path3091"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3057"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect3071"
+       inkscape:connection-end-point="d4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 535.30078,172.07161 478.24831,157.18814"
+       id="path3093"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3037"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end-point="d4"
+       inkscape:connection-end="#rect3031" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 398.04772,172.07161 C 297.37676,150.71733 254.46881,206.60861 229.5809,102.58191"
+       id="path3095"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-end-point="d4"
+       inkscape:connection-end="#rect3081"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-start="#rect3037"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 646.21819,172.07161 27.02297,-14.97392"
+       id="path3097"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3037"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect3025"
+       inkscape:connection-end-point="d4" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="128.02176"
+       y="45.219326"
+       id="text4311"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4313"
+         x="128.02176"
+         y="45.219326">Host</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 554.39933,153.44863 26.99113,0"
+       id="path5575"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect3031"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect3025"
+       inkscape:connection-end-point="d4"
+       transform="translate(-32.147361,-15.928032)" />
+    <rect
+       style="fill:#8ae234;fill-opacity:1;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3081-4"
+       width="254.28572"
+       height="38.57143"
+       x="317.49774"
+       y="64.010483"
+       rx="6.7814388"
+       ry="4.2448273" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="340.91504"
+       y="88.076469"
+       id="text2991-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2993-3"
+         x="340.91504"
+         y="88.076469">Host Service (Flynn-host)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="425.51953"
+       y="45.219326"
+       id="text4311-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4313-2"
+         x="425.51953"
+         y="45.219326">Host</tspan></text>
+    <rect
+       style="fill:#8ae234;fill-opacity:1;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3081-6"
+       width="254.28572"
+       height="38.57143"
+       x="614.99548"
+       y="64.010483"
+       rx="6.7814388"
+       ry="4.2448273" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="638.41278"
+       y="88.076469"
+       id="text2991-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2993-8"
+         x="638.41278"
+         y="88.076469">Host Service (Flynn-host)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Serif;-inkscape-font-specification:Liberation Serif"
+       x="723.01727"
+       y="45.219326"
+       id="text4311-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4313-28"
+         x="723.01727"
+         y="45.219326">Host</tspan></text>
+  </g>
+</svg>
