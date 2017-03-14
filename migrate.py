@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
+import glob
 import os
 import shutil
 import string
+
 
 BASE='../blog.old/content/'
 TARGET='content'
@@ -17,6 +19,10 @@ def list_items(kind):
 
 def nameof(filename):
     return os.path.splitext(filename)[0]
+
+
+def extensionof(filename):
+    return os.path.splitext(filename)[1]
 
 
 def ensure_directory(path):
@@ -36,11 +42,16 @@ def write_article(path, content):
         f.write(str(content))
 
 
-def copy_illustration(article_name, destination):
-    for ext in ['.jpg', '.png']:
-        illustration = os.path.join(BASE, 'images', article_name+ext)
-        if os.path.exists(illustration):
-            shutil.copyfile(illustration, destination+ext)
+def copy_illustration(article_name, target):
+    base = os.path.join(BASE, 'images', article_name)
+    def is_illustration(image):
+        return len(image)-len(base) == 4
+
+    for image in glob.glob(os.path.join(BASE, 'images', article_name+'*')):
+        if is_illustration(image):
+            shutil.copyfile(image, os.path.join(target, 'illustration' + extensionof(image)))
+        else:
+            shutil.copyfile(image, os.path.join(target, image[len(base)+1:]))
 
 
 def translate_front_matter(line):
@@ -103,7 +114,7 @@ def translate_category(kind):
                 publishdate=date,
                 aliases='/'+name+'.html')
         )
-        copy_illustration(name, os.path.join(target, 'illustration'))
+        copy_illustration(name, target)
 
 
 translate_category('articles')
