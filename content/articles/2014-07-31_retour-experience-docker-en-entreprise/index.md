@@ -34,7 +34,7 @@ La première étape de l'accompagnement a permis la mise en place de *Docker* c�
 
 Tous les choix ont été fait avec l'équipe de production, en prenant en compte leurs compétences, les outils de supervisions et les procédures déjà en place, ainsi que les contraintes de licences.
 
-![Infra](/articles/2014-07-31_retour-experience-docker-en-entreprise/infra.png){.pull-left .marge-right}
+![Infra](/articles/2014-07-31_retour-experience-docker-en-entreprise/infra.svg){.pull-left .marge-right}
 
 Les machines de recette servent à la fois à déployer les applications en mode mono-instance pour une première validation et à construire les containers versionnés qui seront déployés en pré-prodcution puis en production.
 
@@ -46,7 +46,7 @@ Tous les serveurs sont identiques... à l'exception des points suivants :
 * les habilitations de l'active directory permettent de filtrer les accès aux serveurs
 * les machines de production sont en Red Hat alors que les autres sont des CentOS
 
-![Détail serveur](/articles/2014-07-31_retour-experience-docker-en-entreprise/server.png){.pull-right .marg-left}
+![Détail serveur](/articles/2014-07-31_retour-experience-docker-en-entreprise/server.svg){.pull-right .marg-left}
 Si l'on regarde en détail un serveur on peut voir que le point d'entrée utilisateur c'est un apache en mode reverse-proxy http préconfiguré pour faire du cache.
 En dessous, tous les tomcats présentent les mêmes interfaces :
 

@@ -13,7 +13,7 @@ publishdate: 2015-03-12
 aliases: /2015-03-12.volumes-uploads.html
 ---
 
-À défaut de pouvoir vous apporter une réponse unique à la question : *Quelles sont les bonnes pratiques avec les volumes ?* À travers cette série d'articles, je propose de vous apporter quelques pistes de réflexions. 
+À défaut de pouvoir vous apporter une réponse unique à la question : *Quelles sont les bonnes pratiques avec les volumes ?* À travers cette série d'articles, je propose de vous apporter quelques pistes de réflexions.
 
 Le premier cas d'utilisation que nous aborderons ici concerne les uploads utilisateurs.
 Le second explore la notion de [contextes](/2015-03-28.volumes-contexte.html).
@@ -28,7 +28,7 @@ sont des données applicatives, impossible de les laisser dans le conteneur.
 D'autant plus si ces données doivent être partagées entre plusieurs conteneurs.
 
 La solution technique la plus évidente pour répondre à ce besoin, c'est d'avoir un
-système de fichier partagé à travers le réseau. 
+système de fichier partagé à travers le réseau.
 
 Seulement, sans passer par des technologies spécifiques et probablement
 onéreuses (agrégation de flux réseaux, fiber channel, ceph, Réseau de stockage spécialisé, ...) le
@@ -64,7 +64,7 @@ n'empêchera de mettre la totalité de ce nouveau domaine derrière un CDN comme
 cloudflare. Ce conteneur de statiques pourra quand à lui enregistrer ses données
 sur un volume, il sera en effet le seul à accéder aux fichiers d'uploads.
 
-![Schéma CDN](/articles/2015-03-12_volumes-uploads/cdn.png){.pull-left .marge-right}
+![Schéma CDN](/articles/2015-03-12_volumes-uploads/cdn.svg){.pull-left .marge-right}
 
 Avec ce nouveau conteneur, le client va uploader son image sur 1 des conteneurs
 applicatifs, une fois l'upload terminé, l'application va déplacer l'image en
@@ -86,12 +86,12 @@ configurer proprement les accès ftp et le nom du domain dédié aux statiques.
 
 Sans passer par un conteneur de statiques, il est possible de déporter le
 stockage de vos fichiers du disque vers un service de stockage d'objet
-clé/valeur comme S3 ou swift. Dans ce cas, le scénario est le suivant : 
+clé/valeur comme S3 ou swift. Dans ce cas, le scénario est le suivant :
 
 Le client upload son image, votre application stock le fichier dans le cluster
 swift et chaque appel de l'image dans les pages web se fait à travers votre
 application qui ira chercher le fichier dans le service de stockage avant de le
-renvoyer au client. 
+renvoyer au client.
 Avec un peu de cache sur chaque serveur applicatif, tout fonctionnera sans
 aucune perte de performance, et ce, même si vous avez un très grand nombre de
 conteneurs applicatif. Déployer cette solution permet de ne pas avoir à
