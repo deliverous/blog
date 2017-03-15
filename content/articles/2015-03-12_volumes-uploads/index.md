@@ -64,7 +64,7 @@ n'empêchera de mettre la totalité de ce nouveau domaine derrière un CDN comme
 cloudflare. Ce conteneur de statiques pourra quand à lui enregistrer ses données
 sur un volume, il sera en effet le seul à accéder aux fichiers d'uploads.
 
-![Schéma CDN]({filename}/images/2015-03-12.volumes-uploads-cdn.png){.pull-left .marge-right}
+![Schéma CDN](/articles/2015-03-12_volumes-uploads/cdn.png){.pull-left .marge-right}
 
 Avec ce nouveau conteneur, le client va uploader son image sur 1 des conteneurs
 applicatifs, une fois l'upload terminé, l'application va déplacer l'image en

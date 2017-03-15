@@ -103,7 +103,7 @@ Toujours dans une optique de démonstration nous trouvons le processus *flynn-ru
 Malheureusement ce processus lance les containers en se connectant directement sur *discoverd* et *flynn-host*... Probablement l'effet démo.
 
 
-![Architechture Flynn]({filename}/images/2014-03-06.flynn-en-detail.flynn-arch.png)
+![Architechture Flynn](/articles/2014-03-06_flynn-en-detail/flynn-arch.png)
 
 # Un système construit avec lui-même
 

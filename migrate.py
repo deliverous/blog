@@ -4,7 +4,9 @@ import glob
 import os
 import shutil
 import string
+import re
 
+IMAGE_PATTERN = re.compile("")
 
 BASE='../blog.old/content/'
 TARGET='content'
@@ -23,6 +25,10 @@ def nameof(filename):
 
 def extensionof(filename):
     return os.path.splitext(filename)[1]
+
+
+def new_article_name(name):
+    return name.replace('.', '_')
 
 
 def ensure_directory(path):
@@ -83,7 +89,19 @@ def render_kwargs_as_front_matter(kwargs):
     return lines
 
 
-def translate_article(content, **kwargs):
+def translate_image_link(kind, article_name, line):
+    if '({filename}' in line:
+        start = line.index('(')+1
+        stop = line.index(')')
+        image = line[start:stop][len('{filename}/images/'):]
+        if image.startswith(article_name):
+            image = image[len(article_name)+1:]
+        new_image = os.path.join('/', kind, new_article_name(article_name), image)
+        return line[:start] + new_image + line[stop:]
+    return line
+
+
+def translate_article(kind, article_name, content, **kwargs):
     lines = ['---']
     in_header = True
     for line in content.split('\n'):
@@ -96,7 +114,7 @@ def translate_article(content, **kwargs):
                 lines.append('')
                 in_header = False
         else:
-            lines.append(line)
+            lines.append(translate_image_link(kind, article_name, line))
     return string.join(lines, '\n')
 
 
@@ -104,11 +122,13 @@ def translate_category(kind):
     for article in list_items(kind):
         name = nameof(article)
         date = name[0:10]
-        target = os.path.join(TARGET, kind, name.replace('.', '_'))
+        target = os.path.join(TARGET, kind, new_article_name(name))
         ensure_directory(target)
         write_article(
             os.path.join(target, 'index.md'),
             translate_article(
+                kind,
+                name,
                 read_article(os.path.join(BASE, kind, article)),
                 date=date,
                 publishdate=date,

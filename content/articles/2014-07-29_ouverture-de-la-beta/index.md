@@ -85,7 +85,7 @@ Durant la béta, il est possible de n'avoir qu'une IP par projet.
 
 # Et maintenant ?
 
-![Infra]({filename}/images/2014-07-29.ouverture-de-la-beta.oui-nide-iou.jpg){.pull-right .marg-left}
+![Infra](/articles/2014-07-29_ouverture-de-la-beta/oui-nide-iou.jpg){.pull-right .marg-left}
 Maintenant que la béta s'ouvre un peu plus, nous attendons avec impatience vos remarques et suggestions sur les choses les plus importantes à vos yeux qu'il faudrait implémenter.
 Concient que le travail est loin d'être terminé, nous aimerions avoir votre avis pour ordonner les évolutions à venir. Nous vous invitons à rejoindre la [mailing liste](http://ml.deliverous.com/mailman/listinfo/deliverous) pour poursuivre les échanges.
 
