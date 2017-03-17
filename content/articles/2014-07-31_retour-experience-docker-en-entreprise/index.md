@@ -38,7 +38,7 @@ Tous les choix ont été fait avec l'équipe de production, en prenant en compte
 {{< figure
   src="infra.svg"
   alt="Infra"
-  class="pull-left marg-left" >}}
+  class="pull-left marge-left" >}}
 
 Les machines de recette servent à la fois à déployer les applications en mode mono-instance pour une première validation et à construire les containers versionnés qui seront déployés en pré-prodcution puis en production.
 
@@ -53,7 +53,7 @@ Tous les serveurs sont identiques... à l'exception des points suivants :
 {{< figure
   src="server.svg"
   alt="Détail serveur"
-  class="pull-right marg-left" >}}
+  class="pull-right marge-left" >}}
 
 Si l'on regarde en détail un serveur on peut voir que le point d'entrée utilisateur c'est un apache en mode reverse-proxy http préconfiguré pour faire du cache.
 En dessous, tous les tomcats présentent les mêmes interfaces :
