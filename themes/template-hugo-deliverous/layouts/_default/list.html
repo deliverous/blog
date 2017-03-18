@@ -12,9 +12,9 @@
             <article class='subblock'>
               <a href="{{ .Permalink }}"><img src="{{ .Permalink }}/illustration__thumbnail-square.jpg" class="img-responsive"/></a>
 
-              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
               <div class="summary">
-                {{ .Description }}
+                {{ .Description | markdownify }}
               </div>
             </article>
           </div>

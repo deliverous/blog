@@ -20,7 +20,7 @@
                             <a href="{{ .Permalink }}"
                                rel="bookmark"
                                title="Permalink to {{ .Title }}">
-                                {{ .Title }}
+                                {{ .Title | markdownify }}
                             </a>
                         </h1>
                     </header>
