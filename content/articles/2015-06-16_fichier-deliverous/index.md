@@ -16,19 +16,21 @@ Le fichier Deliverous est le fichier de configuration utilisé par notre service
 
 Pour définir un conteneur, il suffit de le nommer en début de ligne, par exemple pour un conteneur que l'on appelle "front" :
 
-    :::yaml
-    front:
-      clé1: valeur1
-      clé2: valeur2
+{{< highlight yaml >}}
+front:
+  clé1: valeur1
+  clé2: valeur2
+{{< /highlight >}}
 
 Certaines clés demandent simplement une valeur, d'autres, une liste de valeurs, voir même une liste de sous-clés et de valeurs. Par exemple :
 
-    :::yaml
-    front:
-      clé1: valeur1
-      clé2:
-      - sous_clé1 : valeur2
-      - sous_clé2 : valeur3
+{{< highlight yaml >}}
+front:
+  clé1: valeur1
+  clé2:
+  - sous_clé1 : valeur2
+  - sous_clé2 : valeur3
+{{< /highlight >}}
 
 
 Voici en détail et par ordre alphabétique la liste de toutes les directives qu'il est possible de spécifier.
@@ -39,10 +41,11 @@ Définit la commande à exécuter. Cette valeur est ajoutée à la fin de la com
 
 Exemple:
 
-    :::yaml
-    front:
-      image: deliverous/container
-      command: --start --front 1.2.3.4
+{{< highlight yaml >}}
+front:
+  image: deliverous/container
+  command: --start --front 1.2.3.4
+{{< /highlight >}}
 
 Dans cet exemple, le conteneur sera démarré avec `docker run deliverous/container --start --front 1.2.3.4`
 
@@ -52,13 +55,14 @@ Définit une restriction de déploiement, permet de s'assurer que 2 conteneurs s
 
 Exemple:
 
-    :::yaml
-    front1:
-      image: deliverous/blog
-      deploy_conflict:
-      - front2
-    front2:
-      image: deliverous/blog
+{{< highlight yaml >}}
+front1:
+  image: deliverous/blog
+  deploy_conflict:
+  - front2
+front2:
+  image: deliverous/blog
+{{< /highlight >}}
 
 
 # deploy_with
@@ -67,13 +71,15 @@ Définit une affinité de déploiement, permet de s'assurer que 2 conteneurs ser
 
 Exemple:
 
-    :::yaml
-    front:
-      image: deliverous/container
-      deploy_with:
-      - mysql
-    mysql
-      image: mysql
+{{< highlight yaml >}}
+front:
+  image: deliverous/container
+  deploy_with:
+  - mysql
+mysql
+  image: mysql
+{{< /highlight >}}
+
 
 # dns
 
@@ -81,11 +87,12 @@ Définit un serveur DNS spécifique pour le conteneur. Correspond à l'option `-
 
 Exemple:
 
-    :::yaml
-    front:
-      image: deliverous/blog
-      dns:
-      - 127.0.0.1
+{{< highlight yaml >}}
+front:
+  image: deliverous/blog
+  dns:
+  - 127.0.0.1
+{{< /highlight >}}
 
 Dans cet exemple, le conteneur sera démarré avec `docker run --dns=127.0.0.1 deliverous/blog`. Cette option en plus de l'installation d'un serveur dnsmasq à l'intérieur du conteneur permet entre autres de résoudre les problèmes de modification du fichier `/etc/hosts` par le conteneur lui-même.
 
@@ -95,9 +102,11 @@ Définition du point d'entré. Cette valeur sera donnée à l'option `--entrypoi
 
 Exemple:
 
-    front:
-      image: deliverous/container
-      entrypoint: /usr/local/bin/debug
+{{< highlight yaml >}}
+front:
+  image: deliverous/container
+  entrypoint: /usr/local/bin/debug
+{{< /highlight >}}
 
 Dans cet exemple, le conteneur sera démarré avec `docker run --entrypoint /usr/local/bin/debug deliverous/container`.
 
@@ -107,12 +116,14 @@ Permet de définir des variables d'environnement par une liste de clés valeur.
 
 Exemple:
 
-    front:
-      image: deliverous/blog
-      environment:
-        DB_NAME: blogdb
-        DB_USER: blog
-        ENVIRONEMENT: prod
+{{< highlight yaml >}}
+front:
+  image: deliverous/blog
+  environment:
+    DB_NAME: blogdb
+    DB_USER: blog
+    ENVIRONEMENT: prod
+{{< /highlight >}}
 
 
 # hostname
@@ -121,9 +132,11 @@ Définit le nom réseau du conteneur, correspond à l'option `--hostname` de la 
 
 Exemple:
 
-    front:
-      image: deliverous/container
-      hostname: toto
+{{< highlight yaml >}}
+front:
+  image: deliverous/container
+  hostname: toto
+{{< /highlight >}}
 
 Dans cet exemple, le conteneur sera démarré avec `docker run --hostname=toto deliverous/container`.
 
@@ -131,9 +144,10 @@ Dans cet exemple, le conteneur sera démarré avec `docker run --hostname=toto d
 
 Définition du nom de l'image Docker à utiliser. C'est la seule clé obligatoire. Le nom doit correspondre à un tag complètement qualifié, par exemple "deliverous/blog" pour une image hébergé sur le hub Docker ou "registry.company.com/user/image" pour une image hébergé sur votre propre registry.
 
-    :::yaml
-    front:
-      image: deliverous/blog
+{{< highlight yaml >}}
+front:
+  image: deliverous/blog
+{{< /highlight >}}
 
 
 # limits
@@ -147,10 +161,12 @@ Sans définition, les limites sont les suivantes:
 
 Exemple:
 
-    front:
-      image: deliverous/blog
-      limits:
-        memory: 1G
+{{< highlight yaml >}}
+front:
+  image: deliverous/blog
+  limits:
+    memory: 1G
+{{< /highlight >}}
 
 
 # links
@@ -159,14 +175,15 @@ Définition des liens entre les conteneurs avec une liste de lien. Chaque lien d
 
 Exemple:
 
-    :::yaml
-    front:
-      image: deliverous/container
-      links:
-      - name: mysql
-        alias: db
-    mysql:
-      image: mysql
+{{< highlight yaml >}}
+front:
+  image: deliverous/container
+  links:
+  - name: mysql
+    alias: db
+mysql:
+  image: mysql
+{{< /highlight >}}
 
 Dans cet exemple, le conteneur 'front' demande à être lié au conteneur mysql qu'il nommera 'db'.
 
@@ -178,13 +195,14 @@ Dans cet exemple, le conteneur 'front' demande à être lié au conteneur mysql 
 
 Définitions de la configuration réseau. Permet d'appliquer des règles de routage sur les conteneurs. Par exemple :
 
-    :::yaml
-    front:
-      image: deliverous/blog
-      ports:
-      - ip: blog.deliverous.com
-        container_port: 8080
-        host_port: 80
+{{< highlight yaml >}}
+front:
+  image: deliverous/blog
+  ports:
+  - ip: blog.deliverous.com
+    container_port: 8080
+    host_port: 80
+{{< /highlight >}}
 
 Dans cet exemple, alors que le conteneur expose le port 8080, le conteneur `front` sera accessible sur le port 80 de l'adresse IP `blog.deliverous.com` (c'est le nom qui lui a été donné dans le manager). Il est possible de définir l'ip soit par son nom, soit par l'ip elle-même.
 
@@ -195,9 +213,11 @@ Permet de spécifier l'adresse source qui sera utilisé pour toutes les connecti
 
 Exemple:
 
-    front:
-      image: deliverous/smtp
-      snat: 1.2.3.4
+{{< highlight yaml >}}
+front:
+  image: deliverous/smtp
+  snat: 1.2.3.4
+{{< /highlight >}}
 
 
 # volumes
@@ -206,11 +226,13 @@ Permet de définir des volumes pour persister les données à l'extérieur du co
 
 Exemple:
 
-    demo:
-      image: deliverous/blog
-      volumes:
-      - name: photos
-        path: /srv/photos
+{{< highlight yaml >}}
+demo:
+  image: deliverous/blog
+  volumes:
+  - name: photos
+    path: /srv/photos
+{{< /highlight >}}
 
 
 ---
