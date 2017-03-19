@@ -16,6 +16,10 @@
               <div class="summary">
                 {{ .Description | markdownify }}
               </div>
+
+              <div class='index-info'>
+                 {{ partial "article-info" . }}
+              </div>
             </article>
           </div>
           {{ end }}
