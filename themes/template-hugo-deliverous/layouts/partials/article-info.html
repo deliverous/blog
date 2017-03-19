@@ -1,7 +1,7 @@
 <div class="post-info">
     Le
     <span class="published">
-        <time datetime="{{ .Date }}"> {{ .Date.Format "02 Janvier" }}</time>
+        <time datetime="{{ .Lastmod }}"> {{ .Date.Format "02 Janvier" }}</time>
     </span>
     par {{ delimit (apply (apply (sort ($.Param "authors")) "partial" "author/link" ".") "chomp" ".") ", " }}
     <span class="pull-right">
