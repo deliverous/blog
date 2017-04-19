@@ -1,9 +1,12 @@
 from debian:testing
 
-run apt-get update && apt-get install -y \
-      make \
+run sed -e 's/deb.debian.org/debian.mirrors.ovh.net/g' -i /etc/apt/sources.list
+run apt-get update \
+    && apt-get install -y \
       hugo \
- && apt-get clean
+      imagemagick \
+      make \
+    && apt-get clean
 
 add . /site
 workdir /site
