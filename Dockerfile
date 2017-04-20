@@ -1,9 +1,17 @@
-FROM scratch
+from tclavier/nginx
 MAINTAINER docker@deliverous.com
+run apt-get update \
+    && apt-get install -y \
+      pelican \
+      locales \
+    && apt-get clean
 
-ADD goserve /usr/sbin/goserve
-ADD www/ /var/www/
+# Setup locale
+run echo 'fr_FR.UTF-8 UTF-8' >> /etc/locale.gen \
+    && locale-gen
 
-EXPOSE 80
+add nginx_vhost.conf /etc/nginx/conf.d/blog.conf
+add . /site
+workdir /site
+run pelican content -o /var/www -s publishconf.py
 
-CMD ["/usr/sbin/goserve", "-port", "80", "-root", "/var/www"]
