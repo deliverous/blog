@@ -1,6 +1,5 @@
-from debian:testing
+from tclavier/nginx
 
-run sed -e 's/deb.debian.org/debian.mirrors.ovh.net/g' -i /etc/apt/sources.list
 run apt-get update \
     && apt-get install -y \
       hugo \
@@ -11,4 +10,6 @@ run apt-get update \
 add . /site
 workdir /site
 run make
-cmd /usr/bin/hugo server --port 80 --cleanDestinationDir --destination=/var/www
+run /usr/bin/hugo --destination=/var/www
+add nginx_vhost.conf /etc/nginx/conf.d/blog.conf
+
