@@ -62,10 +62,10 @@ La solution est complexe, pas très pratique, et impose d'avoir un environnement
 
 # Ambassadeur
 
-{{< figure
+{{figure
   src="schema-ambassadeur.png"
   alt="Schéma ambassadeur"
-  class="pull-left marge-right"> }}
+  class="pull-left marge-right" }}
 
 Avec les links, nous nous retrouvons donc avec des conteneurs qui communiquent facilement quand ils sont sur la même machine. Seulement, il faudrait arriver à les faire communiquer à travers le réseau.
 Imaginons que sur la machine de B, nous ayons un conteneur C qui s'occupe de la communication de B et que sur la machine de A nous ayons de la même façon un conteneur D pour la communication réseau de A.
