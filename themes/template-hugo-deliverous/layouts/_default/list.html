@@ -5,8 +5,11 @@
     {{ partial "header" . }}
     <section class="block1">
       <div class="container">
+        {{ range $key, $value := (.Paginator 9).Pages }}
+          {{ $col := add $key 1 }}
+          {{ if eq (mod $col 3) 1 }}
         <div class="row">
-          {{ range (.Paginator 9).Pages }}
+          {{end}}
           <div class='col-md-4'>
             <article class='subblock'>
               <a href="{{ .Permalink }}"><img src="{{ .Permalink }}/illustration__thumbnail-square.jpg" class="img-responsive"/></a>
@@ -22,9 +25,11 @@
 
             </article>
           </div>
-          {{ end }}
 
+          {{ if modBool $col 3 }}
         </div>
+          {{end}}
+        {{ end }}
         <div class="row">
           <div class='col-md-12 text-center'>
             {{ template "_internal/pagination.html" . }}

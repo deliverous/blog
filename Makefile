@@ -3,7 +3,7 @@ JPEG_SQUARE = $(patsubst %.jpg, %__thumbnail-square.jpg, $(JPEG_ORIGINAL))
 JPEG_WIDE = $(patsubst %.jpg, %__thumbnail-wide.jpg, $(JPEG_ORIGINAL))
 
 %__thumbnail-square.jpg: %.jpg
-	convert  -geometry 360x360^ -gravity center -crop 360x360+0+0 "$<" "$@"
+	convert  -geometry 800x800^ -gravity center -crop 800x800+0+0 "$<" "$@"
 
 %__thumbnail-wide.jpg: %.jpg
 	convert "$<" -resize "750>" "$@"
