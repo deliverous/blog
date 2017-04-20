@@ -8,26 +8,24 @@
         {{ range $key, $value := (.Paginator 9).Pages }}
           {{ $col := add $key 1 }}
           {{ if eq (mod $col 3) 1 }}
-        <div class="row">
+            <div class="row">
           {{end}}
-          <div class='col-md-4'>
-            <article class='subblock'>
-              <a href="{{ .Permalink }}"><img src="{{ .Permalink }}/illustration__thumbnail-square.jpg" class="img-responsive"/></a>
+              <div class='col-md-4'>
+                <article class='subblock'>
+                  <a href="{{ .Permalink }}"><img src="{{ .Permalink }}/illustration__thumbnail-square.jpg" class="img-responsive"/></a>
 
-              <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-              <div class="summary">
-                {{ .Description | markdownify }}
+                  <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+                  <div class="summary">
+                    {{ .Description | markdownify }}
+                  </div>
+
+                  <div class='index-info'>
+                     {{ partial "article-info" . }}
+                  </div>
+                </article>
               </div>
-
-              <div class='index-info'>
-                 {{ partial "article-info" . }}
-              </div>
-
-            </article>
-          </div>
-
           {{ if modBool $col 3 }}
-        </div>
+            </div>
           {{end}}
         {{ end }}
         <div class="row">

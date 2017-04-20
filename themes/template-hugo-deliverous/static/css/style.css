@@ -13,6 +13,14 @@ body {
   margin-top : 50px;
 }
 
+.block1 a {
+  color: #2e3436;
+}
+
+.block1 a:hover {
+  color: #2e3436;
+}
+
 .index-info {
   border-top : solid 1px #888a85;
   background-color: #babdb6;
