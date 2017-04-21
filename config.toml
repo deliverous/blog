@@ -2,3 +2,6 @@ languageCode = "fr-fr"
 title = "Blog Deliverous"
 baseurl = "http://blog.deliverous.com/"
 theme = "template-hugo-deliverous"
+
+[taxonomies]
+author = "authors"
