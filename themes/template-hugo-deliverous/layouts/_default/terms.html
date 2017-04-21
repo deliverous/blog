@@ -9,7 +9,8 @@
           <h1 id="title">{{ .Title }}</h1>
           <div class="panel-group" id="accordion">
           {{ $data := .Data }}
-          {{ range $key, $value := .Data.Terms }}
+          {{ range $key, $value := .Data.Terms.ByCount }}
+            <!-- range $key, $value := .Data.Terms.ByCount.Reverse -->
             <div class="panel panel-default">
               <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{$key | urlize}}">
                 <h4 class="panel-title">
