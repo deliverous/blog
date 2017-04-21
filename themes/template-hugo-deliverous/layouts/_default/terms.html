@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ partial "header" . }}
+    <section class="block1">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 id="title">{{ .Title }}</h1>
+          <div class="panel-group" id="accordion">
+          {{ $data := .Data }}
+          {{ range $key, $value := .Data.Terms }}
+            <div class="panel panel-default">
+              <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{$key | urlize}}">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{$key | urlize}}"><i class="fa fa-tags"></i> 
+                    {{ $key }}
+                    <span class="badge pull-right">{{ len $value }}</span>
+                  </a>
+                </h4>
+                <!--
+                  {{ $data.Plural }}/{{ $key | urlize }}
+                -->
+              </div>
+              <div id="collapse-{{$key | urlize}}" class="panel-collapse collapse">
+                <div class="panel-body">
+                {{ range $value.Pages.ByDate }}
+                  <p>
+                    <span class="categories-timestamp"><time datetime="{{ .Lastmod }}">{{ .Date.Format "02 Janvier" }}</time></span>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </p>
+                {{ end }}
+                </div>
+              </div>
+            </div>
+          {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ partial "footer" . }}
+  </body>
+</html>
