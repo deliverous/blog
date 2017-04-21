@@ -10,20 +10,19 @@
           <div class="panel-group" id="accordion">
           {{ $data := .Data }}
           {{ range $key, $value := .Data.Terms.ByCount }}
-            <!-- range $key, $value := .Data.Terms.ByCount.Reverse -->
             <div class="panel panel-default">
-              <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{$key | urlize}}">
+              <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{$value.Name | urlize}}">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{$key | urlize}}"><i class="fa fa-tags"></i> 
-                    {{ $key }}
-                    <span class="badge pull-right">{{ len $value }}</span>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{$value.Name | urlize}}"><i class="fa fa-tags"></i> 
+                    {{ $value.Name }}
+                    <span class="badge pull-right">{{ $value.Count }}</span>
                   </a>
                 </h4>
                 <!--
-                  {{ $data.Plural }}/{{ $key | urlize }}
+                  {{ $data.Plural }}/{{ $value.Name | urlize }}
                 -->
               </div>
-              <div id="collapse-{{$key | urlize}}" class="panel-collapse collapse">
+              <div id="collapse-{{$value.Name | urlize}}" class="panel-collapse collapse">
                 <div class="panel-body">
                 {{ range $value.Pages.ByDate }}
                   <p>
