@@ -14,3 +14,4 @@ blog is available at http://blog.deliverous.com
 ## ce serait bien de l'avoir
 
 - categories : une page avec toutes les catégories comme la page des autheurs ou des tags
+- icon par défaut dans ̀ terms.html` 

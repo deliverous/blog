@@ -10,6 +10,6 @@ run apt-get update \
 add . /site
 workdir /site
 run make
-run /usr/bin/hugo --destination=/var/www
+run /usr/bin/hugo --destination=/var/www 
 add nginx_vhost.conf /etc/nginx/conf.d/blog.conf
 
