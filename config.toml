@@ -6,3 +6,4 @@ theme = "template-hugo-deliverous"
 [taxonomies]
 author = "authors"
 tag = "tags"
+

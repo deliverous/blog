@@ -13,7 +13,7 @@
             <div class="panel panel-default">
               <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{$value.Name | urlize}}">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{$value.Name | urlize}}"><i class="fa fa-tags"></i> 
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{$value.Name | urlize}}"><i class="fa fa-{{ $.Param "icon" }}"></i> 
                     {{ $value.Name }}
                     <span class="badge pull-right">{{ $value.Count }}</span>
                   </a>
@@ -24,9 +24,9 @@
               </div>
               <div id="collapse-{{$value.Name | urlize}}" class="panel-collapse collapse">
                 <div class="panel-body">
-                {{ range $value.Pages.ByDate }}
+                {{ range $value.Pages.ByDate.Reverse }}
                   <p>
-                    <span class="categories-timestamp"><time datetime="{{ .Lastmod }}">{{ .Date.Format "02 Janvier" }}</time></span>
+                    <span class="categories-timestamp"><time datetime="{{ .Lastmod }}">{{ .Date.Format "02 Jan" }}</time></span>
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                   </p>
                 {{ end }}
