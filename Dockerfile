@@ -1,13 +1,13 @@
 from tclavier/nginx
-
 run apt-get update \
     && apt-get install -y \
+      git \
       hugo \
       imagemagick \
       make \
     && apt-get clean
-
 add . /site
+run git clone https://github.com/deliverous/template-hugo-deliverous /site/themes/template-hugo-deliverous
 workdir /site
 run make
 run /usr/bin/hugo --destination=/var/www 
