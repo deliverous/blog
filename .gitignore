@@ -2,6 +2,6 @@
 .*.swp
 *.log
 *.aux
-*.pyc
-*.pid
-.target
+*__thumbnail-*
+public/
+themes/template-hugo-deliverous/

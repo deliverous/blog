@@ -1,17 +1,14 @@
 from tclavier/nginx
-MAINTAINER docker@deliverous.com
 run apt-get update \
     && apt-get install -y \
-      pelican \
-      locales \
+      git \
+      hugo \
+      imagemagick \
+      make \
     && apt-get clean
-
-# Setup locale
-run echo 'fr_FR.UTF-8 UTF-8' >> /etc/locale.gen \
-    && locale-gen
-
-add nginx_vhost.conf /etc/nginx/conf.d/blog.conf
 add . /site
+run git clone https://github.com/deliverous/template-hugo-deliverous /site/themes/template-hugo-deliverous
 workdir /site
-run pelican content -o /var/www -s publishconf.py
-
+run make
+run /usr/bin/hugo --destination=/var/www 
+add nginx_vhost.conf /etc/nginx/conf.d/blog.conf
