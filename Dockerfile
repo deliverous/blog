@@ -7,6 +7,7 @@ run apt-get update \
       make \
     && apt-get clean
 add . /site
+run rm -rf /site/themes/template-hugo-deliverous
 run git clone https://github.com/deliverous/template-hugo-deliverous /site/themes/template-hugo-deliverous
 workdir /site
 run make
