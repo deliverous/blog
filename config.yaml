@@ -1,0 +1,18 @@
+---
+languageCode: "fr-fr"
+title: "Blog Deliverous"
+baseurl: "http://blog.deliverous.com/"
+theme: "template-hugo-deliverous"
+
+taxonomies:
+  author: "authors"
+  tag: "tags"
+
+menu:
+  left:
+    - URL: "/index.xml"
+      Name: "RSS"
+      Pre: "fa-rss"
+    - URL: "/tags/"
+      Pre: "fa-tag"
+      Name: "Tags"
