@@ -1,6 +1,12 @@
 blog:
-image: deliverous/blog
+  image: deliverous/blog
   ports:
   - ip: 5.135.124.23
     container_port: 80
     host_port: 80
+
+gitlab-ci:
+  image: gitlab/gitlab-runner
+  volumes:
+    - name: gitlab-ci-etc
+      path: /etc/gitlab-runner
