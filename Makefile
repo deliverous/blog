@@ -1,3 +1,4 @@
+IMAGE="deliverous/blog"
 JPEG_ORIGINAL = $(shell find content/ -type f -name '*.jpg' ! -name '*__thumbnail-*' )
 JPEG_SQUARE = $(patsubst %.jpg, %__thumbnail-square.jpg, $(JPEG_ORIGINAL))
 JPEG_WIDE = $(patsubst %.jpg, %__thumbnail-wide.jpg, $(JPEG_ORIGINAL))
@@ -17,8 +18,10 @@ clean:
 run:
 	hugo server --buildDrafts -w
 
-test:
-	docker build -t deliverous/marketing .
+build:
+	docker build -t ${IMAGE} .
+
+test: build
 	@docker rm -f marketing || true
 	docker run --name marketing -d -p 80:80 deliverous/marketing
 	wget --no-verbose --recursive --spider http://localhost
