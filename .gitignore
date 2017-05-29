@@ -4,4 +4,5 @@
 *.aux
 *__thumbnail-*
 public/
+themes/
 themes/template-hugo-deliverous/
